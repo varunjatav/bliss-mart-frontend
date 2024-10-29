@@ -59,6 +59,8 @@ const MainCarousel = () => (
     autoPlayInterval={1000}
     controlsStrategy="alternate"
     infinite
+    disableButtonsControls
+    disableDotsControls
   />
 );
 
