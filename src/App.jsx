@@ -1,12 +1,12 @@
-import MainCarousel from "./components/HomeCarousel";
 import Navigation from "./components/Navigation";
+import Home from "./pages/Home";
 
 function App() {
 
   return (
     <>
-      <Navigation/>
-      <MainCarousel/>
+     <Navigation/>
+     <Home/>
     </>
   );
 }
