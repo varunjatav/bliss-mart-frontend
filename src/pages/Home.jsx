@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <MainCarousel />
-      <ProductCarousel />
-      <ProductCarousel />
+      {/* <ProductCarousel />
+      <ProductCarousel /> */}
       <div className="flex flex-row w-[90%] m-auto"> 
         <Filteration/>
       <ProductList />

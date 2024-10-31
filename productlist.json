@@ -1,536 +1,505 @@
 [
-    {
-      "id": 1,
-      "gender": "male",
-      "product_name": "Casual Cotton Shirt",
-      "product_brand": "BrandX",
-      "product_price": 750,
-      "product_details": "A comfortable, breathable cotton shirt perfect for casual outings.",
-      "product_image": "https://www.alayacotton.in/cdn/shop/products/AshirwadCreamWeddingShirtForMen_RegularFit-FullSleeve_ede2017a-86cc-415d-815e-942ae11a3807.jpg?v=1710422260&width=720",
-      "images": {
-        "img_url1": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_5.jpg?v=1710422260&width=720",
-        "img_url2": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_2.jpg?v=1710422260&width=720",
-        "img_url3": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_3.jpg?v=1710422260&width=720",
-        "img_url4": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_4.jpg?v=1710422260&width=720"
-      },
-      "product_discount": 5,
-      "product_qty": 5,
-      "product_category": "shirts"
+  {
+    "gender": "male",
+    "product_name": "Casual Cotton Shirt",
+    "product_brand": "BrandX",
+    "product_price": 750,
+    "product_details": "A comfortable, breathable cotton shirt perfect for casual outings.",
+    "product_image": "https://www.alayacotton.in/cdn/shop/products/AshirwadCreamWeddingShirtForMen_RegularFit-FullSleeve_ede2017a-86cc-415d-815e-942ae11a3807.jpg?v=1710422260&width=720",
+    "images": {
+      "img_url1": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_5.jpg?v=1710422260&width=720",
+      "img_url2": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_2.jpg?v=1710422260&width=720",
+      "img_url3": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_3.jpg?v=1710422260&width=720",
+      "img_url4": "https://www.alayacotton.in/cdn/shop/files/AshirwadCreamWeddingShirtForMen-RegularFit_Alayacotton_4.jpg?v=1710422260&width=720"
     },
-    {
-      "id": 2,
-      "gender": "male",
-      "product_name": "Slim Fit Denim Shirt",
-      "product_brand": "DenimWear",
-      "product_price": 850,
-      "product_details": "A stylish denim shirt with a slim fit design, great for a modern look.",
-      "product_image": "https://images.meesho.com/images/products/399010098/cxyf7_1200.jpg",
-      "images": {
-        "img_url1": "https://images.meesho.com/images/products/399010098/3knnt_1200.jpg",
-        "img_url2": "https://images.meesho.com/images/products/399010098/mdsae_512.webp",
-        "img_url3": "https://images.meesho.com/images/products/399010098/w5vkm_1200.jpg",
-        "img_url4": "https://images.meesho.com/images/products/399010098/w5vkm_512.jpg"
-      },
-      "product_discount": 8,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Slim Fit Denim Shirt",
+    "product_brand": "DenimWear",
+    "product_price": 850,
+    "product_details": "A stylish denim shirt with a slim fit design, great for a modern look.",
+    "product_image": "https://images.meesho.com/images/products/399010098/cxyf7_1200.jpg",
+    "images": {
+      "img_url1": "https://images.meesho.com/images/products/399010098/3knnt_1200.jpg",
+      "img_url2": "https://images.meesho.com/images/products/399010098/mdsae_512.webp",
+      "img_url3": "https://images.meesho.com/images/products/399010098/w5vkm_1200.jpg",
+      "img_url4": "https://images.meesho.com/images/products/399010098/w5vkm_512.jpg"
     },
-    {
-      "id": 3,
-      "gender": "male",
-      "product_name": "Formal White Shirt",
-      "product_brand": "OfficeStyle",
-      "product_price": 950,
-      "product_details": "A crisp white shirt perfect for office and formal events.",
-      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMA0Xv2lNREDSTdqOX-S0NODnSizuLS7gizHT38G7qlhNs4nrBslb3GFkIbPussxdXw8CEfavNf5yzy04CjetwNwQ8rNrMd3mmtPxZyt3yTymANygxozIE",
-      "images": {
-        "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSpkZdR0apNDHf5nlAepwVknKOt7zrksjV11muFE7HQhrqHK9kBo39BsAJbeuLmpHrw50mV1TysDdzgy0B5hH1FNMFypS0JOQ",
-        "img_url2": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRX1XFI_zFWfVbZQNiiU8wujcumFBCViHIw33ZBJzSTjWr9iKlE_AA5zYtMllutzzexJvBnRJ8dt5ilX1EHov2x3kFktrJ1",
-        "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTyr_JrItSoInXC5CTjL42WGfETfS6Nf0mqbOUZXTW-bFsY-zDm7oTwxfBhBy5AowCx0NnJAbzp2A7ksF8WFacO2bXa4b6s",
-        "img_url4": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHE3-ph1QEecfitbzo9pq3Hw86RJlJ-S-du6fD292ccby_QnL0pi68NV6Vp9f6hrZwiGo0Tahl2pGzotXpx6cu5lJH-JwCNw"
-      },
-      "product_discount": 10,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 8,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Formal White Shirt",
+    "product_brand": "OfficeStyle",
+    "product_price": 950,
+    "product_details": "A crisp white shirt perfect for office and formal events.",
+    "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMA0Xv2lNREDSTdqOX-S0NODnSizuLS7gizHT38G7qlhNs4nrBslb3GFkIbPussxdXw8CEfavNf5yzy04CjetwNwQ8rNrMd3mmtPxZyt3yTymANygxozIE",
+    "images": {
+      "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSpkZdR0apNDHf5nlAepwVknKOt7zrksjV11muFE7HQhrqHK9kBo39BsAJbeuLmpHrw50mV1TysDdzgy0B5hH1FNMFypS0JOQ",
+      "img_url2": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRX1XFI_zFWfVbZQNiiU8wujcumFBCViHIw33ZBJzSTjWr9iKlE_AA5zYtMllutzzexJvBnRJ8dt5ilX1EHov2x3kFktrJ1",
+      "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTyr_JrItSoInXC5CTjL42WGfETfS6Nf0mqbOUZXTW-bFsY-zDm7oTwxfBhBy5AowCx0NnJAbzp2A7ksF8WFacO2bXa4b6s",
+      "img_url4": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHE3-ph1QEecfitbzo9pq3Hw86RJlJ-S-du6fD292ccby_QnL0pi68NV6Vp9f6hrZwiGo0Tahl2pGzotXpx6cu5lJH-JwCNw"
     },
-    {
-      "id": 4,
-      "gender": "male",
-      "product_name": "Plaid Flannel Shirt",
-      "product_brand": "RuggedLook",
-      "product_price": 690,
-      "product_details": "A cozy flannel shirt in a classic plaid design, ideal for colder days.",
-      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTBL0-dnX9vopIzhgr0tzsr38u44FpIHIUva3uhCZt9m76_EOP0OpAr8pxeOTfqeGtWCbQT4NDyzYvRlF3wPtOftrB_ByuP9erWSP45QS62EfZipkfdqHDwBQ",
-      "images": {
-        "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTUFNjMzX0s6IxCq2eDrS45Mnns1G7xyZgpzBZIjS8eI0M4BiozTVCnOi3GGgIoX2juUyfo-nmwNbgZbI-e_s-RIIMJvsCOVDFMRUvqDMdyCdxGwX4hFnoL7g",
-        "img_url2": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSyKgqvOMO9eidTtMoSdyZ0gI3CgNLfiYnyL1zXjQtlQyP5JChUJcRctRz5m4imAzTyQ3AC57cAaxeEw0mvGrW4rE6hMCft8qSIbUFLnJFA",
-        "img_url3": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOK3whp_l4EiPXtA-MUc9OPrqGsdFzWpWLrvJdZhGLvwi4xPtee-qtDAa_NOcptuQLF2uxyNMkN_xbLMulOCns31QSHq9U5Cscwxt7XBfe3jH4JetZG5Kz2w"  
-      },
-      "product_discount": 3,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 10,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Plaid Flannel Shirt",
+    "product_brand": "RuggedLook",
+    "product_price": 690,
+    "product_details": "A cozy flannel shirt in a classic plaid design, ideal for colder days.",
+    "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTBL0-dnX9vopIzhgr0tzsr38u44FpIHIUva3uhCZt9m76_EOP0OpAr8pxeOTfqeGtWCbQT4NDyzYvRlF3wPtOftrB_ByuP9erWSP45QS62EfZipkfdqHDwBQ",
+    "images": {
+      "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTUFNjMzX0s6IxCq2eDrS45Mnns1G7xyZgpzBZIjS8eI0M4BiozTVCnOi3GGgIoX2juUyfo-nmwNbgZbI-e_s-RIIMJvsCOVDFMRUvqDMdyCdxGwX4hFnoL7g",
+      "img_url2": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSyKgqvOMO9eidTtMoSdyZ0gI3CgNLfiYnyL1zXjQtlQyP5JChUJcRctRz5m4imAzTyQ3AC57cAaxeEw0mvGrW4rE6hMCft8qSIbUFLnJFA",
+      "img_url3": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOK3whp_l4EiPXtA-MUc9OPrqGsdFzWpWLrvJdZhGLvwi4xPtee-qtDAa_NOcptuQLF2uxyNMkN_xbLMulOCns31QSHq9U5Cscwxt7XBfe3jH4JetZG5Kz2w"
     },
-    {
-      "id": 5,
-      "gender": "male",
-      "product_name": "Men's regular fit shirt",
-      "product_brand": "The Indian Garage Co",
-      "product_price": 500,
-      "product_details": "A versatile regular fit shirt that pairs styles your look.",
-      "product_image": "https://m.media-amazon.com/images/I/91YcEQhsVQL._SX679_.jpg",
-      "images": {
-        "img_url1": "https://m.media-amazon.com/images/I/8179nXCBPgL._SY741_.jpg",
-        "img_url2": "https://m.media-amazon.com/images/I/8179nXCBPgL._SY741_.jpg",
-        "img_url3": "https://m.media-amazon.com/images/I/61y0LLZV9LL._SY741_.jpg",
-        "img_url4": "https://m.media-amazon.com/images/I/71RmA2glGGL._SY741_.jpg"
-      },
-      "product_discount": 0,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 3,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Men's regular fit shirt",
+    "product_brand": "The Indian Garage Co",
+    "product_price": 500,
+    "product_details": "A versatile regular fit shirt that pairs styles your look.",
+    "product_image": "https://m.media-amazon.com/images/I/91YcEQhsVQL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/8179nXCBPgL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/8179nXCBPgL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61y0LLZV9LL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71RmA2glGGL._SY741_.jpg"
     },
-    {
-      "id": 6,
-      "gender": "male",
-      "product_name": "Vintage Printed Shirt",
-      "product_brand": "RetroVibe",
-      "product_price": 820,
-      "product_details": "A shirt with unique vintage prints, perfect for a trendy look.",
-      "product_image": "https://assets.ajio.com/medias/sys_master/root/20240816/uqOm/66bf51a16f60443f310efa62/-473Wx593H-410500465-7461-MODEL.jpg",
-      "images": {
-        "img_url1": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
-        "img_url2": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
-        "img_url3": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
-        "img_url4": "https://assets.ajio.com/medias/sys_master/root/20240816/L4Bx/66bf4bf41d763220fa8002f0/-473Wx593H-410500465-7461-MODEL6.jpg"
-      },
-      "product_discount": 7,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 0,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Vintage Printed Shirt",
+    "product_brand": "RetroVibe",
+    "product_price": 820,
+    "product_details": "A shirt with unique vintage prints, perfect for a trendy look.",
+    "product_image": "https://assets.ajio.com/medias/sys_master/root/20240816/uqOm/66bf51a16f60443f310efa62/-473Wx593H-410500465-7461-MODEL.jpg",
+    "images": {
+      "img_url1": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
+      "img_url2": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
+      "img_url3": "https://assets.ajio.com/medias/sys_master/root/20240816/DWhF/66bf52ff1d763220fa802107/-473Wx593H-410500465-7461-MODEL4.jpg",
+      "img_url4": "https://assets.ajio.com/medias/sys_master/root/20240816/L4Bx/66bf4bf41d763220fa8002f0/-473Wx593H-410500465-7461-MODEL6.jpg"
     },
-    {
-      "id": 7,
-      "gender": "male",
-      "product_name": "Linen Summer Shirt",
-      "product_brand": "CoolWear",
-      "product_price": 3999,
-      "product_details": "A light and breezy linen shirt, perfect for summer days.",
-      "product_image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVzQx0nWeTQ3qsiQGm-qmZh9OnBnmkdkgDelYrVELrxBVmqSibdhBaAYI0ar6dISQY7VlsteiAWTeGhFhKCJDwnFfRbgQux-lhQFZ8RjaQ",
-      "images": {
-        "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHSeBHlHaG9eyIfRO5AiOTT1i5fgjbllTg7nobaw0EGlBi4GG8jCZVCPmYxLY-4q07q8BcPJ3ikaxr_aPEB4ON3Q5ZfBqTLiEjkxRZ-b0",
-        "img_url2": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS6rCPZLdpOdK9djhXRXmVHZwJsisHFMX9qZI7g-OrkF2cJ9MvQZqNK9iieTiYLJhcWZGqnLhG4_SZv3QmR_ojWKzyS1V3bIom5_e_HtA",
-        "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5A7zzBXrbn84R-BlX24sKn4Wqf6wTUO2rJY-JQ-nC3SUM6K3WHEykoMaEfFU0x-a1viCnXlQ6FiAzVTNwt_9S6LWo2auiR1qAcajO1BCEVnVbgbea7UrOXQ",
-        "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS3XyFenDqoD7lM3-sJNtHcPNmYb4xE6v2ND9z8XnhWNkZV-VQ8OFYh2sjQ_sfg_OJXTBHKWzQmRag9nmprhkdQJ5n5MEdj_wWWVl5T9A"
-      },
-      "product_discount": 15,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 7,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Linen Summer Shirt",
+    "product_brand": "CoolWear",
+    "product_price": 3999,
+    "product_details": "A light and breezy linen shirt, perfect for summer days.",
+    "product_image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVzQx0nWeTQ3qsiQGm-qmZh9OnBnmkdkgDelYrVELrxBVmqSibdhBaAYI0ar6dISQY7VlsteiAWTeGhFhKCJDwnFfRbgQux-lhQFZ8RjaQ",
+    "images": {
+      "img_url1": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHSeBHlHaG9eyIfRO5AiOTT1i5fgjbllTg7nobaw0EGlBi4GG8jCZVCPmYxLY-4q07q8BcPJ3ikaxr_aPEB4ON3Q5ZfBqTLiEjkxRZ-b0",
+      "img_url2": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS6rCPZLdpOdK9djhXRXmVHZwJsisHFMX9qZI7g-OrkF2cJ9MvQZqNK9iieTiYLJhcWZGqnLhG4_SZv3QmR_ojWKzyS1V3bIom5_e_HtA",
+      "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5A7zzBXrbn84R-BlX24sKn4Wqf6wTUO2rJY-JQ-nC3SUM6K3WHEykoMaEfFU0x-a1viCnXlQ6FiAzVTNwt_9S6LWo2auiR1qAcajO1BCEVnVbgbea7UrOXQ",
+      "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS3XyFenDqoD7lM3-sJNtHcPNmYb4xE6v2ND9z8XnhWNkZV-VQ8OFYh2sjQ_sfg_OJXTBHKWzQmRag9nmprhkdQJ5n5MEdj_wWWVl5T9A"
     },
-    {
-      "id": 8,
-      "gender": "male",
-      "product_name": "Zara Oxford Shirt",
-      "product_brand": "Gentlemen's Style",
-      "product_price": 2990,
-      "product_details": "A classic Oxford shirt, ideal for business casual outfits.",
-      "product_image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvpHdT1Nke3peZraJ6RBfZz83t4bjcBpXFVJZZHE4HAa-sNTBEejE77fSvUyrPUdegWS3r6u7K4w-rPoqglMNW4tYl7UiQqH58q5FwsTrCb6uoa5DmvhmDTu_e",
-      "images": {
-        "img_url1": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtBTN6J_3P3_8mtb4kzp5qDadWChVqxd5kNm7KIUFqDVq7eeyyzCg0bwPuwmeQU_5KpH3A94d5jETA72x61Ro-kMoxb9rpqZ4VbHioZw",
-        "img_url2": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSmegdS9qIBn_ARvJME23WZjS0EtVI4MZtkXSOueMLjARITRmNx9B38M3FmcNR6gjIkIvAYl8gZZiEgVq-e6AMUJ_vUKnIPFVgqtVwCm-UrBuybhBzNlpFnNg",
-        "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSppq1grrxYdVaZJBmM1LlWZ8qEN9ihXhDiAL5-CPAezIkQmeoXdWFr5WPbkKP3zu8TPLlnxi1mZ-3TwGl85-RrEpEx_Y92UajBDauFTQ6VOGm337s52XGqbw",
-        "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSySIyqZ_M8og34gfp7nd-knOjI5bRkKYxmpjufWSqLHlBD9N17MoquOLas-wY9tmz3b6f5DGrekWyVhilH5oJVON3N084MRWEavRAm2k7JXDw9emPABHWjPQ"
-      },
-      "product_discount": 5,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 15,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Zara Oxford Shirt",
+    "product_brand": "Gentlemen's Style",
+    "product_price": 2990,
+    "product_details": "A classic Oxford shirt, ideal for business casual outfits.",
+    "product_image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvpHdT1Nke3peZraJ6RBfZz83t4bjcBpXFVJZZHE4HAa-sNTBEejE77fSvUyrPUdegWS3r6u7K4w-rPoqglMNW4tYl7UiQqH58q5FwsTrCb6uoa5DmvhmDTu_e",
+    "images": {
+      "img_url1": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtBTN6J_3P3_8mtb4kzp5qDadWChVqxd5kNm7KIUFqDVq7eeyyzCg0bwPuwmeQU_5KpH3A94d5jETA72x61Ro-kMoxb9rpqZ4VbHioZw",
+      "img_url2": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSmegdS9qIBn_ARvJME23WZjS0EtVI4MZtkXSOueMLjARITRmNx9B38M3FmcNR6gjIkIvAYl8gZZiEgVq-e6AMUJ_vUKnIPFVgqtVwCm-UrBuybhBzNlpFnNg",
+      "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSppq1grrxYdVaZJBmM1LlWZ8qEN9ihXhDiAL5-CPAezIkQmeoXdWFr5WPbkKP3zu8TPLlnxi1mZ-3TwGl85-RrEpEx_Y92UajBDauFTQ6VOGm337s52XGqbw",
+      "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSySIyqZ_M8og34gfp7nd-knOjI5bRkKYxmpjufWSqLHlBD9N17MoquOLas-wY9tmz3b6f5DGrekWyVhilH5oJVON3N084MRWEavRAm2k7JXDw9emPABHWjPQ"
     },
-    {
-      "id": 9,
-      "gender": "male",
-      "product_name": "Graphic T-Shirt",
-      "product_brand": "UrbanStyle",
-      "product_price": 540,
-      "product_details": "A modern t-shirt with bold graphic prints for a streetwear look.",
-      "product_image": "https://assets.ajio.com/medias/sys_master/root/20240909/IZf5/66debbc36f60443f3163a9d6/-473Wx593H-700393193-brown-MODEL.jpg",
-      "images": {
-        "img_url1": "https://assets.ajio.com/medias/sys_master/root/20240909/8Sul/66debbc36f60443f3163a963/-473Wx593H-700393193-brown-MODEL2.jpg"
-      },
-      "product_discount": 2,
-      "product_qty": 5,
-      "product_category": "t-shirts"
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Graphic T-Shirt",
+    "product_brand": "UrbanStyle",
+    "product_price": 540,
+    "product_details": "A modern t-shirt with bold graphic prints for a streetwear look.",
+    "product_image": "https://assets.ajio.com/medias/sys_master/root/20240909/IZf5/66debbc36f60443f3163a9d6/-473Wx593H-700393193-brown-MODEL.jpg",
+    "images": {
+      "img_url1": "https://assets.ajio.com/medias/sys_master/root/20240909/8Sul/66debbc36f60443f3163a963/-473Wx593H-700393193-brown-MODEL2.jpg"
     },
-    {
-      "id": 10,
-      "gender": "male",
-      "product_name": "Chambray Shirt",
-      "product_brand": "Casual Luxe",
-      "product_price": 3550,
-      "product_details": "A soft and durable chambray shirt, suitable for a laid-back look.",
-      "product_image": "https://static.zara.net/assets/public/38b9/4478/09f44c4688cc/806b25f4dd5d/06987340800-e1/06987340800-e1.jpg?ts=1727338108372&w=563",
-      "images": {
-        "img_url1": "https://static.zara.net/assets/public/1ffa/31a2/63ae455eb838/39975a4eb705/06987340800-e2/06987340800-e2.jpg?ts=1727338154237&w=563",
-        "img_url2": "https://static.zara.net/assets/public/d3fa/bcbe/f42a482c8e96/b1e4428acb22/06987340800-e3/06987340800-e3.jpg?ts=1727338114779&w=563"
-      },
-      "product_discount": 20,
-      "product_qty": 5,
-      "product_category": "shirts"
+    "product_discount": 2,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Chambray Shirt",
+    "product_brand": "Casual Luxe",
+    "product_price": 3550,
+    "product_details": "A soft and durable chambray shirt, suitable for a laid-back look.",
+    "product_image": "https://static.zara.net/assets/public/38b9/4478/09f44c4688cc/806b25f4dd5d/06987340800-e1/06987340800-e1.jpg?ts=1727338108372&w=563",
+    "images": {
+      "img_url1": "https://static.zara.net/assets/public/1ffa/31a2/63ae455eb838/39975a4eb705/06987340800-e2/06987340800-e2.jpg?ts=1727338154237&w=563",
+      "img_url2": "https://static.zara.net/assets/public/d3fa/bcbe/f42a482c8e96/b1e4428acb22/06987340800-e3/06987340800-e3.jpg?ts=1727338114779&w=563"
     },
-    {
-        "id": 11,
-        "gender": "male",
-        "product_name": "Classic Blue Jeans",
-        "product_brand": "DenimMaster",
-        "product_price": 2999,
-        "product_details": "A pair of classic blue jeans with a regular fit, great for everyday wear.",
-        "product_image": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_1.jpg",
-        "images": {
-          "img_url1": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_2.jpg",
-          "img_url2": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_2.jpg",
-          "img_url3": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_5.jpg",
-          "img_url4": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_6.jpg"
-        },
-        "product_discount": 5,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 12,
-        "gender": "male",
-        "product_name": "Skinny Fit Jeans",
-        "product_brand": "UrbanStyle",
-        "product_price": 1350,
-        "product_details": "Skinny fit jeans for a trendy look, made from stretchable denim.",
-        "product_image": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-1.jpg?v=1716967781",
-        "images": {
-          "img_url1": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-2.jpg?v=1716967780",
-          "img_url2": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-3.jpg?v=1716967781",
-          "img_url3": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-4.jpg?v=1716967780",
-          "img_url4": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-5.jpg?v=1716967780"
-        },
-        "product_discount": 7,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 13,
-        "gender": "male",
-        "product_name": "Distressed Jeans",
-        "product_brand": "RuggedWear",
-        "product_price": 1599,
-        "product_details": "Distressed jeans for a bold, urban look.",
-        "product_image": "https://freakins.com/cdn/shop/files/14March_06351-Edit.jpg?v=1711018704&width=800",
-        "images": {
-          "img_url1": "https://freakins.com/cdn/shop/files/14March_06301-Edit.jpg?v=1711018704&width=800",
-          "img_url2": "https://freakins.com/cdn/shop/files/14March_06501-Edit.jpg?v=1710578887&width=800",
-          "img_url3": "https://freakins.com/cdn/shop/files/14March_06561-Edit.jpg?v=1710578887&width=800",
-          "img_url4": "https://freakins.com/cdn/shop/files/14March_06471-Edit.jpg?v=1710578887&width=800"
-        },
-        "product_discount": 6,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 14,
-        "gender": "male",
-        "product_name": "Slim Fit Jeans",
-        "product_brand": "SlimFit Co.",
-        "product_price": 4299,
-        "product_details": "A slim fit style, ideal for a modern look.",
-        "product_image": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-1.jpg?v=1729589886",
-        "images": {
-          "img_url1": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-1.jpg?v=1729589886",
-          "img_url2": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-3.jpg?v=1729589886",
-          "img_url3": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-4.jpg?v=1729589886",
-          "img_url4": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-5.jpg?v=1729589885"
-        },
-        "product_discount": 55,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 15,
-        "gender": "male",
-        "product_name": "Straight Cut Jeans",
-        "product_brand": "BrandX",
-        "product_price": 3199,
-        "product_details": "Straight cut jeans with a relaxed fit, suitable for all-day wear.",
-        "product_image": "https://freakins.com/cdn/shop/files/17april_6159_86cdfdee-ddc0-4830-8f22-2aef62798f59.jpg?v=1716912545&width=800",
-        "images": {
-          "img_url1": "https://freakins.com/cdn/shop/files/17april_6162_dd5a5bd0-0396-4d86-90f4-63ff8bafc5ef.jpg?v=1716912545&width=800",
-          "img_url2": "https://freakins.com/cdn/shop/files/17april_6164.jpg?v=1716912536&width=800",
-          "img_url3": "https://freakins.com/cdn/shop/files/17april_6169.jpg?v=1716912536&width=800",
-          "img_url4": "https://freakins.com/cdn/shop/files/17april_6167.jpg?v=1716912536&width=800"
-        },
-        "product_discount": 52,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 16,
-        "gender": "male",
-        "product_name": "Black Slim Jeans",
-        "product_brand": "DarkWear",
-        "product_price": 2399,
-        "product_details": "A stylish pair of black jeans with a slim fit design.",
-        "product_image": "https://freakins.com/cdn/shop/files/17april_6167.jpg?v=1716912536&width=800",
-        "images": {
-          "img_url1": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_2.jpg",
-          "img_url2": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_3.jpg",
-          "img_url3": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_4.jpg",
-          "img_url4": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_5.jpg"
-        },
-        "product_discount": 0,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 17,
-        "gender": "male",
-        "product_name": "Stretch Jeans",
-        "product_brand": "ComfortFit",
-        "product_price": 2499,
-        "product_details": "Stretchable denim for all-day comfort and flexibility.",
-        "product_image": "https://m.media-amazon.com/images/I/616xchp1ECL._SY879_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/61W0Ucal3hL._SY741_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/51j8-zllAhL._SY741_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/61gzKcW79nL._SY741_.jpg",
-          "img_url4": "https://m.media-amazon.com/images/I/81rlLrgobLL._SY741_.jpg"
-        },
-        "product_discount": 70,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 18,
-        "gender": "male",
-        "product_name": "High-Waist Jeans",
-        "product_brand": "VintageDenim",
-        "product_price": 3199,
-        "product_details": "A pair of high-waist jeans with a classic design.",
-        "product_image": "https://freakins.com/cdn/shop/files/DSC_4117.jpg?v=1705745068&width=800",
-        "images": {
-          "img_url1": "https://freakins.com/cdn/shop/files/DSC_4129.jpg?v=1705745068&width=800",
-          "img_url2": "https://freakins.com/cdn/shop/files/DSC_4123.jpg?v=1705745068&width=800",
-          "img_url3": "https://freakins.com/cdn/shop/files/DSC_4132.jpg?v=1705745068&width=800",
-          "img_url4": "https://freakins.com/cdn/shop/files/DSC_4101.jpg?v=1705745068&width=800"
-        },
-        "product_discount": 52,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 19,
-        "gender": "male",
-        "product_name": "Cargo Jeans",
-        "product_brand": "UtilityWear",
-        "product_price": 2399,
-        "product_details": "Jeans with cargo pockets for a rugged, functional style.",
-        "product_image": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey.png?v=1725767196&width=360",
-        "images": {
-          "img_url1": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-1.jpg?v=1725767212&width=360",
-          "img_url2": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-3.jpg?v=1725767212&width=360",
-          "img_url3": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-4.jpg?v=1725767212&width=360",
-          "img_url4": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-5.jpg?v=1725767212&width=360"
-        },
-        "product_discount": 64,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 20,
-        "gender": "male",
-        "product_name": "Relaxed Fit Jeans",
-        "product_brand": "CasualCozy",
-        "product_price": 3899,
-        "product_details": "Relaxed fit jeans, comfortable for any casual occasion.",
-        "product_image": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_1.jpg?v=1715690488&width=400",
-        "images": {
-          "img_url1": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_3.jpg?v=1715690488&width=400",
-          "img_url2": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_4.jpg?v=1715690488&width=400",
-          "img_url3": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_5.jpg?v=1715690488&width=400",
-          "img_url4": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_6.jpg?v=1715690488&width=400"
-        },
-        "product_discount": 63,
-        "product_qty": 5,
-        "product_category": "jeans"
-      },
-      {
-        "id": 21,
-        "gender": "male",
-        "product_name": "Basic White T-Shirt",
-        "product_brand": "EverydayWear",
-        "product_price": 350,
-        "product_details": "A versatile white t-shirt for everyday casual wear.",
-        "product_image": "https://images.bewakoof.com/t1080/men-s-white-t-shirt-105-1702967985-1.jpg",
-        "images": {
-          "img_url1": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332517-2.jpg",
-          "img_url2": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332523-3.jpg",
-          "img_url3": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332528-4.jpg",
-          "img_url4": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332533-5.jpg"
-        },
-        "product_discount": 5,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 22,
-        "gender": "male",
-        "product_name": "Graphic Tee",
-        "product_brand": "UrbanStyle",
-        "product_price": 450,
-        "product_details": "A bold graphic tee for a trendy, streetwear look.",
-        "product_image": "https://pronk.in/cdn/shop/files/573.jpg?v=1722325210&width=120",
-        "images": {
-          "img_url1": "https://pronk.in/cdn/shop/files/576.jpg?v=1722325210&width=120",
-          "img_url2": "https://pronk.in/cdn/shop/files/574.jpg?v=1722325210&width=120",
-          "img_url3": "https://pronk.in/cdn/shop/files/575.jpg?v=1722325210&width=120",
-          "img_url4": "https://pronk.in/cdn/shop/files/577_3ec55a6b-ae98-442d-8226-4acb660e936d.jpg?v=1722325210&width=120"
-        },
-        "product_discount": 7,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 23,
-        "gender": "male",
-        "product_name": "Plain Black T-Shirt",
-        "product_brand": "ClassicFit",
-        "product_price": 499,
-        "product_details": "A plain black t-shirt that pairs well with any outfit.",
-        "product_image": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-lookshot-4.jpg?v=1711545874&width=900",
-        "images": {
-          "img_url1": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-lookshot-1.jpg?v=1711545890&width=900",
-          "img_url2": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-side.jpg?v=1711545907&width=900",
-          "img_url3": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-front.jpg?v=1711545906&width=900",
-          "img_url4": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-zoom.jpg?v=1711545926&width=900"
-        },
-        "product_discount": 0,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 24,
-        "gender": "male",
-        "product_name": "Striped T-Shirt",
-        "product_brand": "SummerVibe",
-        "product_price": 699,
-        "product_details": "A lightweight, striped tee perfect for summer.",
-        "product_image": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_2.webp?v=1700025889&width=560",
-        "images": {
-          "img_url1": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_3.webp?v=1700025889&width=560",
-          "img_url2": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_4.webp?v=1700025889&width=560",
-          "img_url3": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_6.webp?v=1700025889&width=560",
-          "img_url4": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_6.webp?v=1700025889&width=560"
-        },
-        "product_discount": 0,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 25,
-        "gender": "male",
-        "product_name": "V-Neck T-Shirt",
-        "product_brand": "FashionBasics",
-        "product_price": 579,
-        "product_details": "A comfortable V-neck t-shirt for a casual look.",
-        "product_image": "https://m.media-amazon.com/images/I/71FuxKGbM1L._SX679_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/61U97vv-qML._SX679_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/71GEJHQSEcL._SX679_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/61D8467KYRL._SX679_.jpg",
-          "img_url4": "https://m.media-amazon.com/images/I/715Y64pKmjL._SX679_.jpg"
-        },
-        "product_discount": 5,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 26,
-        "gender": "male",
-        "product_name": "Round Neck T-Shirt",
-        "product_brand": "CasualBasics",
-        "product_price": 360,
-        "product_details": "A classic round-neck t-shirt for casual wear.",
-        "product_image": "https://m.media-amazon.com/images/I/71klDrSTd3L._SX679_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/71K4D2X-7PL._SX679_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/71QlXhNHy1L._SX679_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/61NOuX-i4uL._SX679_.jpg",
-          "img_url4": "https://m.media-amazon.com/images/I/61nDbfXJ6PL._SX679_.jpg"
-        },
-        "product_discount": 5,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 27,
-        "gender": "male",
-        "product_name": "Pocket Tee",
-        "product_brand": "TrendSetters",
-        "product_price": 390,
-        "product_details": "A t-shirt with a pocket for a unique look.",
-        "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQCTcNX6CjEXDFyZmjSLdRzJBzHstbp5DvEBA8cj16tahb0o01kcHNC21q-QktA4NWwVR7BxQWpV4nolNRXwltz1f2IEfeovmyQI42dSXQ",
-        "images": {
-          "img_url1": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQCTcNX6CjEXDFyZmjSLdRzJBzHstbp5DvEBA8cj16tahb0o01kcHNC21q-QktA4NWwVR7BxQWpV4nolNRXwltz1f2IEfeovmyQI42dSXQ",
-          "img_url2": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRAI19JcBIz1z6Jb4LbQ8jmmrRI5kycQ6lynojuM5g0nW7yP62P4O1ZZJoRtNA7dpaOUtaH7Z4B74ZtDXJmCMiNTEkBSQcbnhI5hyTH99M",
-          "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSq9rkypKPzUMWbyjXfhnYPMDGEWQx9TXbGguTsXuof1ddGvfp8gfl1DQACFE-0IhANA7VPnWzR6HWzx0V--iD0nVnRreEGDD_qb7j9AD1s",
-          "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5C61GF7rDhSg9LafYM36u3RqGQzZSb5l2yVBC5pW5AQeqPOm65L234jZjOMZte_vVm8C5RiU16GCggJ85LTBNuCLdFUYAPtDQzQcmfDPK"
-        },
-        "product_discount": 6,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 28,
-        "gender": "male",
-        "product_name": "Henley T-Shirt",
-        "product_brand": "CasualClassics",
-        "product_price": 550,
-        "product_details": "A stylish Henley t-shirt for a modern look.",
-        "product_image": "https://m.media-amazon.com/images/I/51gCor13OUL._SY741_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/51xAsaDCu3L._SX679_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/51XRqHbm45L._SX679_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/71UrbVlfhPL._SX679_.jpg"
-        },
-        "product_discount": 16,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 29,
-        "gender": "male",
-        "product_name": "Oversized T-Shirt",
-        "product_brand": "ComfyCozy",
-        "product_price": 1199,
-        "product_details": "Oversized tee for a relaxed, comfortable fit.",
-        "product_image": "https://m.media-amazon.com/images/I/61MPGbBpC3L._SY879_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/51mWHd6ZvML._SY741_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/61jUxNKju2L._SY741_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/61d8QdNoCRL._SY741_.jpg",
-          "img_url4": "https://m.media-amazon.com/images/I/51MD4TwHjvL._SX679_.jpg"
-        },
-        "product_discount": 37,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      },
-      {
-        "id": 30,
-        "gender": "male",
-        "product_name": "Polo T-Shirt",
-        "product_brand": "ElegantWear",
-        "product_price": 2999,
-        "product_details": "A stylish polo shirt, perfect for semi-formal settings.",
-        "product_image": "https://m.media-amazon.com/images/I/71x4rLhMkML._SY741_.jpg",
-        "images": {
-          "img_url1": "https://m.media-amazon.com/images/I/71hLYEi5SoL._SY741_.jpg",
-          "img_url2": "https://m.media-amazon.com/images/I/71woBXPcxPL._SY741_.jpg",
-          "img_url3": "https://m.media-amazon.com/images/I/61BgTz16eTL._SY741_.jpg",
-          "img_url4": "https://m.media-amazon.com/images/I/71iiqwLf-pL._SY741_.jpg"
-        },
-        "product_discount": 87,
-        "product_qty": 5,
-        "product_category": "t-shirts"
-      } 
-  ]
-  
+    "product_discount": 20,
+    "product_qty": 5,
+    "product_category": "shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Classic Blue Jeans",
+    "product_brand": "DenimMaster",
+    "product_price": 2999,
+    "product_details": "A pair of classic blue jeans with a regular fit, great for everyday wear.",
+    "product_image": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_1.jpg",
+    "images": {
+      "img_url1": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_2.jpg",
+      "img_url2": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_2.jpg",
+      "img_url3": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_5.jpg",
+      "img_url4": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24823-MID%20TONE_6.jpg"
+    },
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Skinny Fit Jeans",
+    "product_brand": "UrbanStyle",
+    "product_price": 1350,
+    "product_details": "Skinny fit jeans for a trendy look, made from stretchable denim.",
+    "product_image": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-1.jpg?v=1716967781",
+    "images": {
+      "img_url1": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-2.jpg?v=1716967780",
+      "img_url2": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-3.jpg?v=1716967781",
+      "img_url3": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-4.jpg?v=1716967780",
+      "img_url4": "https://myraymond.com/cdn/shop/files/XCYZ02368-B7-5.jpg?v=1716967780"
+    },
+    "product_discount": 7,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Distressed Jeans",
+    "product_brand": "RuggedWear",
+    "product_price": 1599,
+    "product_details": "Distressed jeans for a bold, urban look.",
+    "product_image": "https://freakins.com/cdn/shop/files/14March_06351-Edit.jpg?v=1711018704&width=800",
+    "images": {
+      "img_url1": "https://freakins.com/cdn/shop/files/14March_06301-Edit.jpg?v=1711018704&width=800",
+      "img_url2": "https://freakins.com/cdn/shop/files/14March_06501-Edit.jpg?v=1710578887&width=800",
+      "img_url3": "https://freakins.com/cdn/shop/files/14March_06561-Edit.jpg?v=1710578887&width=800",
+      "img_url4": "https://freakins.com/cdn/shop/files/14March_06471-Edit.jpg?v=1710578887&width=800"
+    },
+    "product_discount": 6,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Slim Fit Jeans",
+    "product_brand": "SlimFit Co.",
+    "product_price": 4299,
+    "product_details": "A slim fit style, ideal for a modern look.",
+    "product_image": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-1.jpg?v=1729589886",
+    "images": {
+      "img_url1": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-1.jpg?v=1729589886",
+      "img_url2": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-3.jpg?v=1729589886",
+      "img_url3": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-4.jpg?v=1729589886",
+      "img_url4": "https://myraymond.com/cdn/shop/files/RCYL00463-B4-5.jpg?v=1729589885"
+    },
+    "product_discount": 55,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Straight Cut Jeans",
+    "product_brand": "BrandX",
+    "product_price": 3199,
+    "product_details": "Straight cut jeans with a relaxed fit, suitable for all-day wear.",
+    "product_image": "https://freakins.com/cdn/shop/files/17april_6159_86cdfdee-ddc0-4830-8f22-2aef62798f59.jpg?v=1716912545&width=800",
+    "images": {
+      "img_url1": "https://freakins.com/cdn/shop/files/17april_6162_dd5a5bd0-0396-4d86-90f4-63ff8bafc5ef.jpg?v=1716912545&width=800",
+      "img_url2": "https://freakins.com/cdn/shop/files/17april_6164.jpg?v=1716912536&width=800",
+      "img_url3": "https://freakins.com/cdn/shop/files/17april_6169.jpg?v=1716912536&width=800",
+      "img_url4": "https://freakins.com/cdn/shop/files/17april_6167.jpg?v=1716912536&width=800"
+    },
+    "product_discount": 52,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Black Slim Jeans",
+    "product_brand": "DarkWear",
+    "product_price": 2399,
+    "product_details": "A stylish pair of black jeans with a slim fit design.",
+    "product_image": "https://freakins.com/cdn/shop/files/17april_6167.jpg?v=1716912536&width=800",
+    "images": {
+      "img_url1": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_2.jpg",
+      "img_url2": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_3.jpg",
+      "img_url3": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_4.jpg",
+      "img_url4": "https://pictures.kartmax.in/cover/live/600x800/quality=6/sites/w0ACRcy407Pb14QWUoSQ/product-images/BHDI24837-BLACK%20TONE_5.jpg"
+    },
+    "product_discount": 0,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Stretch Jeans",
+    "product_brand": "ComfortFit",
+    "product_price": 2499,
+    "product_details": "Stretchable denim for all-day comfort and flexibility.",
+    "product_image": "https://m.media-amazon.com/images/I/616xchp1ECL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61W0Ucal3hL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51j8-zllAhL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61gzKcW79nL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81rlLrgobLL._SY741_.jpg"
+    },
+    "product_discount": 70,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "High-Waist Jeans",
+    "product_brand": "VintageDenim",
+    "product_price": 3199,
+    "product_details": "A pair of high-waist jeans with a classic design.",
+    "product_image": "https://freakins.com/cdn/shop/files/DSC_4117.jpg?v=1705745068&width=800",
+    "images": {
+      "img_url1": "https://freakins.com/cdn/shop/files/DSC_4129.jpg?v=1705745068&width=800",
+      "img_url2": "https://freakins.com/cdn/shop/files/DSC_4123.jpg?v=1705745068&width=800",
+      "img_url3": "https://freakins.com/cdn/shop/files/DSC_4132.jpg?v=1705745068&width=800",
+      "img_url4": "https://freakins.com/cdn/shop/files/DSC_4101.jpg?v=1705745068&width=800"
+    },
+    "product_discount": 52,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Cargo Jeans",
+    "product_brand": "UtilityWear",
+    "product_price": 2399,
+    "product_details": "Jeans with cargo pockets for a rugged, functional style.",
+    "product_image": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey.png?v=1725767196&width=360",
+    "images": {
+      "img_url1": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-1.jpg?v=1725767212&width=360",
+      "img_url2": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-3.jpg?v=1725767212&width=360",
+      "img_url3": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-4.jpg?v=1725767212&width=360",
+      "img_url4": "https://www.urbanofashion.com/cdn/shop/files/jeanlscargo-mgrey-5.jpg?v=1725767212&width=360"
+    },
+    "product_discount": 64,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Relaxed Fit Jeans",
+    "product_brand": "CasualCozy",
+    "product_price": 3899,
+    "product_details": "Relaxed fit jeans, comfortable for any casual occasion.",
+    "product_image": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_1.jpg?v=1715690488&width=400",
+    "images": {
+      "img_url1": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_3.jpg?v=1715690488&width=400",
+      "img_url2": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_4.jpg?v=1715690488&width=400",
+      "img_url3": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_5.jpg?v=1715690488&width=400",
+      "img_url4": "https://www.dennislingo.com/cdn/shop/files/DLMJNS24005_MB_6.jpg?v=1715690488&width=400"
+    },
+    "product_discount": 63,
+    "product_qty": 5,
+    "product_category": "jeans"
+  },
+  {
+    "gender": "male",
+    "product_name": "Basic White T-Shirt",
+    "product_brand": "EverydayWear",
+    "product_price": 350,
+    "product_details": "A versatile white t-shirt for everyday casual wear.",
+    "product_image": "https://images.bewakoof.com/t1080/men-s-white-t-shirt-105-1702967985-1.jpg",
+    "images": {
+      "img_url1": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332517-2.jpg",
+      "img_url2": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332523-3.jpg",
+      "img_url3": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332528-4.jpg",
+      "img_url4": "https://images.bewakoof.com/t1080/white-half-sleeve-t-shirt-105-1666332533-5.jpg"
+    },
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Graphic Tee",
+    "product_brand": "UrbanStyle",
+    "product_price": 450,
+    "product_details": "A bold graphic tee for a trendy, streetwear look.",
+    "product_image": "https://pronk.in/cdn/shop/files/573.jpg?v=1722325210&width=120",
+    "images": {
+      "img_url1": "https://pronk.in/cdn/shop/files/576.jpg?v=1722325210&width=120",
+      "img_url2": "https://pronk.in/cdn/shop/files/574.jpg?v=1722325210&width=120",
+      "img_url3": "https://pronk.in/cdn/shop/files/575.jpg?v=1722325210&width=120",
+      "img_url4": "https://pronk.in/cdn/shop/files/577_3ec55a6b-ae98-442d-8226-4acb660e936d.jpg?v=1722325210&width=120"
+    },
+    "product_discount": 7,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Plain Black T-Shirt",
+    "product_brand": "ClassicFit",
+    "product_price": 499,
+    "product_details": "A plain black t-shirt that pairs well with any outfit.",
+    "product_image": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-lookshot-4.jpg?v=1711545874&width=900",
+    "images": {
+      "img_url1": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-lookshot-1.jpg?v=1711545890&width=900",
+      "img_url2": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-side.jpg?v=1711545907&width=900",
+      "img_url3": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-front.jpg?v=1711545906&width=900",
+      "img_url4": "https://xyxxcrew.com/cdn/shop/files/pace-combed-cotton-t-shirt-sage-green-zoom.jpg?v=1711545926&width=900"
+    },
+    "product_discount": 0,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Striped T-Shirt",
+    "product_brand": "SummerVibe",
+    "product_price": 699,
+    "product_details": "A lightweight, striped tee perfect for summer.",
+    "product_image": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_2.webp?v=1700025889&width=560",
+    "images": {
+      "img_url1": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_3.webp?v=1700025889&width=560",
+      "img_url2": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_4.webp?v=1700025889&width=560",
+      "img_url3": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_6.webp?v=1700025889&width=560",
+      "img_url4": "https://www.jockey.in/cdn/shop/products/2715_NV-WH_0105_S123_JKY_6.webp?v=1700025889&width=560"
+    },
+    "product_discount": 0,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "V-Neck T-Shirt",
+    "product_brand": "FashionBasics",
+    "product_price": 579,
+    "product_details": "A comfortable V-neck t-shirt for a casual look.",
+    "product_image": "https://m.media-amazon.com/images/I/71FuxKGbM1L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61U97vv-qML._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71GEJHQSEcL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61D8467KYRL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/715Y64pKmjL._SX679_.jpg"
+    },
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Round Neck T-Shirt",
+    "product_brand": "CasualBasics",
+    "product_price": 360,
+    "product_details": "A classic round-neck t-shirt for casual wear.",
+    "product_image": "https://m.media-amazon.com/images/I/71klDrSTd3L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71K4D2X-7PL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71QlXhNHy1L._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61NOuX-i4uL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61nDbfXJ6PL._SX679_.jpg"
+    },
+    "product_discount": 5,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Pocket Tee",
+    "product_brand": "TrendSetters",
+    "product_price": 390,
+    "product_details": "A t-shirt with a pocket for a unique look.",
+    "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQCTcNX6CjEXDFyZmjSLdRzJBzHstbp5DvEBA8cj16tahb0o01kcHNC21q-QktA4NWwVR7BxQWpV4nolNRXwltz1f2IEfeovmyQI42dSXQ",
+    "images": {
+      "img_url1": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQCTcNX6CjEXDFyZmjSLdRzJBzHstbp5DvEBA8cj16tahb0o01kcHNC21q-QktA4NWwVR7BxQWpV4nolNRXwltz1f2IEfeovmyQI42dSXQ",
+      "img_url2": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRAI19JcBIz1z6Jb4LbQ8jmmrRI5kycQ6lynojuM5g0nW7yP62P4O1ZZJoRtNA7dpaOUtaH7Z4B74ZtDXJmCMiNTEkBSQcbnhI5hyTH99M",
+      "img_url3": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSq9rkypKPzUMWbyjXfhnYPMDGEWQx9TXbGguTsXuof1ddGvfp8gfl1DQACFE-0IhANA7VPnWzR6HWzx0V--iD0nVnRreEGDD_qb7j9AD1s",
+      "img_url4": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5C61GF7rDhSg9LafYM36u3RqGQzZSb5l2yVBC5pW5AQeqPOm65L234jZjOMZte_vVm8C5RiU16GCggJ85LTBNuCLdFUYAPtDQzQcmfDPK"
+    },
+    "product_discount": 6,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Henley T-Shirt",
+    "product_brand": "CasualClassics",
+    "product_price": 550,
+    "product_details": "A stylish Henley t-shirt for a modern look.",
+    "product_image": "https://m.media-amazon.com/images/I/51gCor13OUL._SY741_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51xAsaDCu3L._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51XRqHbm45L._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71UrbVlfhPL._SX679_.jpg"
+    },
+    "product_discount": 16,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Oversized T-Shirt",
+    "product_brand": "ComfyCozy",
+    "product_price": 1199,
+    "product_details": "Oversized tee for a relaxed, comfortable fit.",
+    "product_image": "https://m.media-amazon.com/images/I/61MPGbBpC3L._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51mWHd6ZvML._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61jUxNKju2L._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61d8QdNoCRL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/51MD4TwHjvL._SX679_.jpg"
+    },
+    "product_discount": 37,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Polo T-Shirt",
+    "product_brand": "ElegantWear",
+    "product_price": 2999,
+    "product_details": "A stylish polo shirt, perfect for semi-formal settings.",
+    "product_image": "https://m.media-amazon.com/images/I/71x4rLhMkML._SY741_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71hLYEi5SoL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71woBXPcxPL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61BgTz16eTL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71iiqwLf-pL._SY741_.jpg"
+    },
+    "product_discount": 87,
+    "product_qty": 5,
+    "product_category": "t-shirts"
+  }
+]
