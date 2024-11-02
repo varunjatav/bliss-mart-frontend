@@ -4,6 +4,7 @@ import ProductCarousel from "../components/ProductCarousel";
 import ProductList from "../components/ProductList";
 import Filteration from "../components/Filteration";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <ProductList />
       </div>
       <Pagination />
+      <Footer/>
     </>
   );
 };

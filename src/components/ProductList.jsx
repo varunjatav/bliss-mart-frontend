@@ -10,8 +10,8 @@ const ProductList = () => {
   console.log(productState.page);
 
   useEffect(() => {
-    dispatch(getAllProducts(productState.page));
-  }, [dispatch,productState.page]);
+    dispatch(getAllProducts({page:productState.page, category:productState.category}));
+  }, [dispatch,productState.page, productState.category]);
 
   useEffect(() => {
     setProducts(productState.products.productData);
@@ -27,7 +27,7 @@ const ProductList = () => {
   }
 
   return (
-    <div className="flex-3  grid grid-cols-4 w-[80%] m-auto justify-center">
+    <div className="flex-3 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 w-[80%] m-auto justify-center">
       {products &&
         products.map((product) => {
           return <Product product={product} key={product._id} />;
