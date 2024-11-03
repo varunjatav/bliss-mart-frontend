@@ -7,7 +7,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch();
   const productState = useSelector((state) => state.products);
-  console.log(productState.page);
+  // console.log(productState.page);
 
   useEffect(() => {
     dispatch(getAllProducts({page:productState.page, category:productState.category}));

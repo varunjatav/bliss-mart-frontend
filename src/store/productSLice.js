@@ -4,10 +4,10 @@ import axios from "axios";
 export const getAllProducts = createAsyncThunk(
   "products/get",
   async ({page, category}, { rejectWithValue }) => {
-    console.log("product slice",page, category)
+    // console.log("product slice",page, category)
     try {
       const products = await axios.get(
-       category ==='all' ? `http://localhost:8080/api/products?page=${page}&limit=8` : `http://localhost:8080/api/products?page=${page}&limit=8&product_category=${category}`
+       `http://localhost:8080/api/products?page=${page}&limit=8&product_category=${category}&product_price[gte]=1000&product_price[lte]=2000`
       );
       return products.data;
     } catch (error) {
@@ -27,6 +27,7 @@ const productSlice = createSlice({
     page:1,
     limit:8,
     category:"all",
+    price: null,
   },
 
   reducers: {
@@ -47,7 +48,10 @@ const productSlice = createSlice({
     },
     handleCategory: (state,action) => {
       state.category = action.payload;
-      console.log(state.category);
+    },
+    handlePrice: (state,action) => {
+      state.price = action.payload;
+      console.log(state.price);
     }
   },
   extraReducers: (builder) => {

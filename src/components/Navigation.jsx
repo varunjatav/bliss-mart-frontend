@@ -279,7 +279,7 @@ export default function Example() {
         </div>
       </Dialog>
 
-      <header className="relative bg-white">
+      <header className="fixed w-full z-40 bg-white">
        
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
