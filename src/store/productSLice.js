@@ -3,12 +3,18 @@ import axios from "axios";
 
 export const getAllProducts = createAsyncThunk(
   "products/get",
-  async ({page, category}, { rejectWithValue }) => {
-    // console.log("product slice",page, category)
+  async ({page, category , price}, { rejectWithValue }) => {
+    
+    const [lowerRange, higherRange] = price.split(" , ");
+    console.log(lowerRange, higherRange);
+    
+    const categoryFilter = category !== "all" ? category : "";
+    const rangeFilter = lowerRange === "all"?  "" : lowerRange;
+    console.log(lowerRange, higherRange);
+    const url = `http://localhost:8080/api/products?page=${page}&limit=8&product_category=${categoryFilter}&product_price=${rangeFilter}`;
+    // console.log(lowerRange, higherRange);
     try {
-      const products = await axios.get(
-       `http://localhost:8080/api/products?page=${page}&limit=8&product_category=${category}&product_price[gte]=1000&product_price[lte]=2000`
-      );
+      const products = await axios.get(url);
       return products.data;
     } catch (error) {
       console.log(error);
@@ -27,7 +33,7 @@ const productSlice = createSlice({
     page:1,
     limit:8,
     category:"all",
-    price: null,
+    price: "all",
   },
 
   reducers: {

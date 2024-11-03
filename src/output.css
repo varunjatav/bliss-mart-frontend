@@ -1089,8 +1089,8 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-3 {
@@ -1103,10 +1103,6 @@ video {
 
 .pt-px {
   padding-top: 1px;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .align-bottom {

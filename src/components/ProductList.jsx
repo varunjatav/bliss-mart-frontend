@@ -10,8 +10,8 @@ const ProductList = () => {
   // console.log(productState.page);
 
   useEffect(() => {
-    dispatch(getAllProducts({page:productState.page, category:productState.category}));
-  }, [dispatch,productState.page, productState.category]);
+    dispatch(getAllProducts({page:productState.page, category:productState.category, price:productState.price}));
+  }, [dispatch,productState.page, productState.category, productState.price]);
 
   useEffect(() => {
     setProducts(productState.products.productData);

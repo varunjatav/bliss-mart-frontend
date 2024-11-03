@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts, productActions } from "../store/productSlice";
+import { productActions } from "../store/productSlice";
 
 const Filteration = () => {
   const productState = useSelector(state => state.products);
