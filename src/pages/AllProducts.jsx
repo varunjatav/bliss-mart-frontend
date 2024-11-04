@@ -1,6 +1,6 @@
 import React from 'react'
-import Filteration from './Filteration'
-import ProductList from './ProductList'
+import Filteration from '../components/Filteration'
+import ProductList from '../components/ProductList'
 
 const AllProducts = () => {
   return (

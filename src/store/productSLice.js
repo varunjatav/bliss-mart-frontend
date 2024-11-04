@@ -11,17 +11,8 @@ export const getAllProducts = createAsyncThunk(
     lowerRange = priceRange[0] || lowerRange;
     higherRange = priceRange[1] || higherRange;
 
-    console.log(lowerRange, higherRange);
+    var url = `http://localhost:8080/api/products?product_category=${category}&product_price[gte]=${lowerRange}&product_price[lte]=${higherRange}`;
 
-    
-      var url = `http://localhost:8080/api/products?product_category=${category}&product_price[gte]=${lowerRange}&product_price[lte]=${higherRange}`;
-   
-
-    // const categoryFilter = category !== "all" ? category : "";
-    // const rangeFilter = lowerRange === "all"?  "" : lowerRange;
-    console.log(lowerRange, higherRange);
-
-    // console.log(lowerRange, higherRange);
     try {
       const products = await axios.get(url);
       return products.data;
@@ -32,16 +23,20 @@ export const getAllProducts = createAsyncThunk(
   }
 );
 
-
-export const getsingleProduct = createAsyncThunk("get/singleProduct" , async(productId, {rejectWithValue}) => {
-  try {
-    const response = await axios.get(`http://localhost:8080/api/singleproduct/${productId}`);
-    return response.data.singleProduct;
-  } catch (error) {
-    console.log(error);
-    return rejectWithValue(error);
+export const getsingleProduct = createAsyncThunk(
+  "get/singleProduct",
+  async (productId, { rejectWithValue }) => {
+    try {
+      const response = await axios.get(
+        `http://localhost:8080/api/singleproduct/${productId}`
+      );
+      return response.data.singleProduct;
+    } catch (error) {
+      console.log(error);
+      return rejectWithValue(error);
+    }
   }
-}); 
+);
 
 const productSlice = createSlice({
   name: "products",
@@ -54,8 +49,8 @@ const productSlice = createSlice({
     limit: 8,
     category: "all",
     price: "0 - 5000",
-    // productId: null,
     singleProduct: [],
+    selectImg: "",
   },
 
   reducers: {
@@ -78,9 +73,9 @@ const productSlice = createSlice({
     handlePrice: (state, action) => {
       state.price = action.payload;
     },
-    setProductId : (state, action) => {
-      state.productId = action.payload;
-    }
+    setselectImg: (state, action) => {
+      state.selectImg = action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(getAllProducts.fulfilled, (state, action) => {
@@ -106,6 +101,7 @@ const productSlice = createSlice({
       state.rejected = false;
       state.singleProduct = action.payload;
       state.error = null;
+      state.selectImg = action.payload[0].images.img_url1;
     });
     builder.addCase(getsingleProduct.pending, (state, action) => {
       state.isloading = true;

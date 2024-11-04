@@ -1,65 +1,76 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getsingleProduct } from "../store/productSlice";
+import { getsingleProduct, productActions } from "../store/productSlice";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { cartActions, postToCart } from "../store/cartSlice";
 
 const ProductDetails = () => {
   const { productId } = useParams();
-//   const [product_details , setProduct_details] = useState({});
-
   const dispatch = useDispatch();
-
+//   const [selectImg, setselectImg] = useState("");
   const singleProductState = useSelector((state) => state.products.singleProduct);
+ const selectImage = useSelector((state) => state.products.selectImg);
 
  
-  console.log("single product",singleProductState);
-
+//   console.log("select image",selectImage);
+  console.log("singleProductState",singleProductState);
 
 
   useEffect(() => {
-    dispatch(getsingleProduct(productId));
-    // setProduct_details(singleProduct);
-    
+    dispatch(getsingleProduct(productId)); 
   }, [productId]);
 // console.log("product details", product_details)
+// console.log(selectImage);
+const handleSelectImage = (image) => {
+    dispatch(productActions.setselectImg(image))
+}
+const addToCart = (product) => {
+    console.log(product);
+    
+    dispatch(postToCart(product))
+}
 
   return (
-    <section className="pt-24 flex flex-cols-3 h-[100vh] px-5">
+    <section className="pt-24 flex flex-col md:flex-row md:h-[100vh] px-5">
       {
         singleProductState?.map((product ,i) => {
             return (
                 <>
-                <div className="flex-1 flex flex-row" key={i}>
-                <div className="flex flex-1 w-[20%] flex-col gap-2">
+                <div className="flex-1 flex flex-col sm:flex-row" key={i}>
+                <div className="flex flex-1 w-[20%] flex-row mb-4 sm:mb-0 sm:flex-col gap-2">
                   <img
-                    src="https://m.media-amazon.com/images/I/712fWYf5PpL._SY879_.jpg"
+                    src={product?.images?.img_url1}
                     alt="saree"
                     loading="lazy"
                     className="w-20 h-24 cursor-pointer border-2 border-black rounded-md"
+                    onClick={() => handleSelectImage(product?.images?.img_url1)}
                   />
                   <img
-                    src="https://m.media-amazon.com/images/I/71q9rOA23fL._SY741_.jpg"
+                    src={product?.images?.img_url2}
                     alt="saree"
                     loading="lazy"
                     className="w-20 h-24 cursor-pointer border-2 border-black rounded-md"
+                    onClick={() => handleSelectImage(product?.images?.img_url2)}
                   />
                   <img
-                    src="https://m.media-amazon.com/images/I/71z6peC37iL._SY741_.jpg"
+                    src={product?.images?.img_url3}
                     alt="saree"
                     loading="lazy"
                     className="w-20 h-24 cursor-pointer border-2 border-black rounded-md"
+                    onClick={() => handleSelectImage(product?.images?.img_url3)}
                   />
                   <img
-                    src="https://m.media-amazon.com/images/I/61vk2l2upeL._SX679_.jpg"
+                    src={product?.images?.img_url4}
                     alt="saree"
                     loading="lazy"
                     className="w-20 h-24 cursor-pointer border-2 border-black rounded-md"
+                    onClick={() => handleSelectImage(product?.images?.img_url4)}
                   />
                 </div>
-                <div className="flex-2 w-[80%]">
+                <div className="flex-2 w-[80%] mb-4 sm:mb-0">
                   <img
-                    src={product.product_image}
+                    src={selectImage === "" ? product.product_image: selectImage}
                     className="h-[100%] w-full"
                     alt={product.product_name}
                     loading="lazy"
@@ -82,7 +93,7 @@ const ProductDetails = () => {
                 <p className="text-md text-gray-700">
                     {product.gender === 'male' ? 'Gents': 'Ladies'}
                 </p>
-                <button className="mt-5 bg-yellow-500 py-2 px-3 rounded-3xl text-white"> <AddShoppingCartIcon/> Add To Cart</button>
+                <button className="mt-5 bg-yellow-500 py-2 px-3 rounded-3xl text-white" onClick={() => addToCart(product)}> <AddShoppingCartIcon/> Add To Cart</button>
               </div>
               </>
             )
