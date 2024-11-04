@@ -501,5 +501,856 @@
     "product_discount": 87,
     "product_qty": 5,
     "product_category": "t-shirts"
+  },
+  {
+    "gender": "male",
+    "product_name": "Leather Wallet",
+    "product_brand": "UrbanGear",
+    "product_price": 1499,
+    "product_details": "Premium leather wallet with multiple compartments and RFID protection.",
+    "product_image": "https://m.media-amazon.com/images/I/41ehPDL4crL._SL1200_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/A1R88q8K14L._SL1500_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/917YHliQGgL._SL1500_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81uPBvYbSmL._SL1500_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81T8LdEzLQL._SL1500_.jpg"
+    },
+    "product_discount": 25,
+    "product_qty": 10,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Classic Sunglasses",
+    "product_brand": "ShadeHouse",
+    "product_price": 1299,
+    "product_details": "Stylish polarized sunglasses with UV protection.",
+    "product_image": "https://m.media-amazon.com/images/I/41DGhNEs6DL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/41UPxuTxlRL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51cm2lIt4ML._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61qyqJkVxkL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/51jG2Rh5cqL._SX679_.jpg"
+    },
+    "product_discount": 30,
+    "product_qty": 15,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Stainless Steel Watch",
+    "product_brand": "Timely",
+    "product_price": 5999,
+    "product_details": "Elegant stainless steel watch with water resistance up to 50 meters.",
+    "product_image": "https://m.media-amazon.com/images/I/81vvGuM1ehL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81Hqm8RU5AL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81DAFLb3PtL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61Djd5t6x7L._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71Krq5WTBWL._SX679_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 8,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Leather Belt",
+    "product_brand": "StyleBelt",
+    "product_price": 799,
+    "product_details": "Genuine leather belt with a classic buckle for a formal look.",
+    "product_image": "https://m.media-amazon.com/images/I/71owGXTI4JL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/91q9KtJ6z3L._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/717IUCjhoGL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91i3EGlfJeL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/611lYFHcq5L._SX679_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 20,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Stainless Steel Bracelet",
+    "product_brand": "WristStyle",
+    "product_price": 999,
+    "product_details": "Minimalist stainless steel bracelet, a perfect gift for any occasion.",
+    "product_image": "https://m.media-amazon.com/images/I/71owGXTI4JL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/91q9KtJ6z3L._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/717IUCjhoGL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91i3EGlfJeL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/611lYFHcq5L._SX679_.jpg"
+    },
+    "product_discount": 10,
+    "product_qty": 30,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Canvas Duffel Bag",
+    "product_brand": "TravelMate",
+    "product_price": 2999,
+    "product_details": "Durable canvas duffel bag, ideal for weekend getaways.",
+    "product_image": "https://m.media-amazon.com/images/I/61bPqclR3+L._SL1440_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61VK4TrPwwL._SL1440_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61AyqT+J06L._SL1440_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61gp52rF9+L._SL1440_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71cRucJRV7L._SL1440_.jpg"
+    },
+    "product_discount": 35,
+    "product_qty": 12,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Silk Tie Set",
+    "product_brand": "Louse Stitch",
+    "product_price": 599,
+    "product_details": "Luxurious silk tie with matching pocket square and cufflinks.",
+    "product_image": "https://m.media-amazon.com/images/I/71W6z0NDGLL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71Xm4ROBTOL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61uN8AJlWiL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/8147dDLLOVL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71w0lXCRCxL._SX679_.jpg"
+    },
+    "product_discount": 50,
+    "product_qty": 18,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Laptop Backpack",
+    "product_brand": "CarryOn",
+    "product_price": 3499,
+    "product_details": "Spacious and stylish backpack with a dedicated laptop compartment.",
+    "product_image": "https://m.media-amazon.com/images/I/61o3NqZ+13L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/91P-JH+PnXL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71Y4CX865BL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71zaICd0iCL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71ziNStnBnL._SX679_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 10,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Beanie Hat",
+    "product_brand": "WarmWear",
+    "product_price": 399,
+    "product_details": "Soft wool beanie hat to keep you warm and stylish during winter.",
+    "product_image": "https://m.media-amazon.com/images/I/51p3el5Dq7L.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51lcDITvkzL.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51TJ6POembL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/515P-+BAVdL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61wvyxWS-IL._SX679_.jpg"
+    },
+    "product_discount": 10,
+    "product_qty": 25,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "male",
+    "product_name": "Sports Cap",
+    "product_brand": "ActiveGear",
+    "product_price": 499,
+    "product_details": "Breathable and lightweight sports cap with adjustable strap.",
+    "product_image": "https://m.media-amazon.com/images/I/81nRbxD3qEL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/815gWjY38xL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/812i-oXvOgL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81thAsgqM6L._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/91wvE796YDL._SX679_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 22,
+    "product_category": "accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Silk Saree",
+    "product_brand": "Elegance Silk",
+    "product_price": 3499,
+    "product_details": "Elegant silk saree with a contrasting border, perfect for festive occasions.",
+    "product_image": "https://m.media-amazon.com/images/I/71VnZHFcyKL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/91kn5qCKPUL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81uMXEaRrpL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81RodCTeFTL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/91uKgAv-73L._SY741_.jpg"
+    },
+    "product_discount": 30,
+    "product_qty": 12,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Georgette Saree",
+    "product_brand": "Fashionista",
+    "product_price": 2599,
+    "product_details": "Lightweight georgette saree with floral print, ideal for casual outings.",
+    "product_image": "https://m.media-amazon.com/images/I/71pro9dA7wL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81DybBOBzkL._SX569_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81nnBwByMjL._SX569_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81nnBwByMjL._SX569_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71d6DZWJiJL._SY741_.jpg"
+    },
+    "product_discount": 40,
+    "product_qty": 20,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Cotton Saree",
+    "product_brand": "Natural Weave",
+    "product_price": 1999,
+    "product_details": "Soft cotton saree with a simple yet elegant design, perfect for everyday wear.",
+    "product_image": "https://m.media-amazon.com/images/I/71o6qvkzESL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81GR-gvCsrL._SX569_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81xe44YiFaL._SX569_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81PYrpFBtxL._SX569_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81-7kABcIhL._SX569_.jpg"
+    },
+    "product_discount": 35,
+    "product_qty": 15,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Kanjivaram Silk Saree",
+    "product_brand": "Ethnic Charm",
+    "product_price": 7999,
+    "product_details": "Luxurious Kanjivaram silk saree with intricate zari work, suitable for weddings.",
+    "product_image": "https://m.media-amazon.com/images/I/81u0kTDXAeL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61WIVvYdhRL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61CyuIkNE5L._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61ud09XJd5L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61J9SqdcKcL._SY741_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 5,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Chiffon Saree",
+    "product_brand": "Glamour Weave",
+    "product_price": 1899,
+    "product_details": "Stylish chiffon saree with a designer pallu, ideal for parties.",
+    "product_image": "https://m.media-amazon.com/images/I/81JEy-7-UJL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81JEy-7-UJL._SY879_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/91miFlH9gBL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81jVye6RiwL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/817ZgZVzQkL._SY741_.jpg"
+    },
+    "product_discount": 45,
+    "product_qty": 25,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Banarasi Silk Saree",
+    "product_brand": "Heritage Looms",
+    "product_price": 5999,
+    "product_details": "Traditional Banarasi silk saree with heavy zari and pallu work.",
+    "product_image": "https://m.media-amazon.com/images/I/71zXtqE3JGL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/8178lNBssbL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71dDzxcD1IL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/7164LeToBaL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/7164LeToBaL._SY741_.jpg"
+    },
+    "product_discount": 25,
+    "product_qty": 10,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Net Saree",
+    "product_brand": "Mystique",
+    "product_price": 2999,
+    "product_details": "Glamorous net saree with sequin work, suitable for evening functions.",
+    "product_image": "https://m.media-amazon.com/images/I/61Rgz46MBoL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71sAGfZ6x3L._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71sAGfZ6x3L._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71HedAwFUuL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71TcKdDXYKL._SX679_.jpg"
+    },
+    "product_discount": 35,
+    "product_qty": 18,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Tussar Silk Saree",
+    "product_brand": "Pure Silks",
+    "product_price": 4599,
+    "product_details": "Handwoven tussar silk saree with subtle patterns, perfect for formal events.",
+    "product_image": "https://m.media-amazon.com/images/I/71rvcm-y2+L._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/717ipZX9aPL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/813qi1JPUyL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91uLESym1iL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71mSp5eZG7L._SY741_.jpg"
+    },
+    "product_discount": 18,
+    "product_qty": 8,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Printed Linen Saree",
+    "product_brand": "EcoStyle",
+    "product_price": 1599,
+    "product_details": "Casual linen saree with a modern printed design, comfortable for daily wear.",
+    "product_image": "https://m.media-amazon.com/images/I/71qvjLzKbUL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81OsDwspK8L._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81KPwlypDbL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81rCNeCnkqL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81rCNeCnkqL._SY741_.jpg"
+    },
+    "product_discount": 40,
+    "product_qty": 30,
+    "product_category": "sarees"
+  },
+  {
+    "gender": "female",
+    "product_name": "Chanderi Silk Saree",
+    "product_brand": "Tradition Weaves",
+    "product_price": 3299,
+    "product_details": "Classic Chanderi silk saree with traditional motifs, ideal for festive occasions.",
+    "product_image": "https://m.media-amazon.com/images/I/81zm9od089L._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81uqoj-XDTL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81nyQdEOQdL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81qiHHIa3aL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81TiZLYO7fL._SY741_.jpg"
+    },
+    "product_discount": 22,
+    "product_qty": 14,
+    "product_category": "sarees"
+  },
+ 
+  {
+    "gender": "female",
+    "product_name": "Cotton Printed Kurti",
+    "product_brand": "FabIndia",
+    "product_price": 999,
+    "product_details": "Lightweight cotton kurti with floral prints, perfect for daily wear.",
+    "product_image": "https://m.media-amazon.com/images/I/5183nvty4WL.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71opaYDwWhL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71+2vywZXzL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71NGBxA4l7L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71Y-QdwociL._SY741_.jpg"
+    },
+    "product_discount": 40,
+    "product_qty": 25,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Anarkali Kurti",
+    "product_brand": "W for Women",
+    "product_price": 2599,
+    "product_details": "Elegant Anarkali kurti with intricate patterns, suitable for festive occasions.",
+    "product_image": "https://m.media-amazon.com/images/I/71iJQroMi3L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81sRNDCZmsL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81INVHImEpL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81bRzWwz3KL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71IkHQzx7DL._SX679_.jpg"
+    },
+    "product_discount": 70,
+    "product_qty": 15,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "A-Line Kurti",
+    "product_brand": "Global Desi",
+    "product_price": 999,
+    "product_details": "Chic A-line kurti with a high-low hem, perfect for casual outings.",
+    "product_image": "https://m.media-amazon.com/images/I/61oiE0sgdVL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/610xCGe7siL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61k0M6zjgcL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61YnrWKrJ4L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61OI8XGF5cL._SY741_.jpg"
+    },
+    "product_discount": 25,
+    "product_qty": 18,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Straight Kurti",
+    "product_brand": "Biba",
+    "product_price": 1099,
+    "product_details": "Classic straight-cut kurti with a minimalist design, suitable for workwear.",
+    "product_image": "https://m.media-amazon.com/images/I/617oIssA-LL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61QW8DaexYL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51SAl5SyfYL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81fu7gIPzZL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61Os2AtqaWL._SY741_.jpg"
+    },
+    "product_discount": 30,
+    "product_qty": 20,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Chikan Embroidered Kurti",
+    "product_brand": "Lucknow Chikan",
+    "product_price": 1499,
+    "product_details": "Traditional Chikan embroidered kurti with a lightweight, airy feel.",
+    "product_image": "https://m.media-amazon.com/images/I/61GriYv5D0L._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71JC99a8RbL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71BTxF4fhTL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71GQwkS8p7L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71+uuUyjhOL._SY741_.jpg"
+    },
+    "product_discount": 10,
+    "product_qty": 12,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Indo-Western Kurti",
+    "product_brand": "Soch",
+    "product_price": 1399,
+    "product_details": "Fusion style kurti with an Indo-Western design, suitable for casual outings.",
+    "product_image": "https://m.media-amazon.com/images/I/41GBTwNmqLL.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51t5q15-8PL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51NH-FDGyoL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61jocL47ywL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/51PuHpkpIvL._SY741_.jpg"
+    },
+    "product_discount": 30,
+    "product_qty": 14,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "High-Low Hem Kurti",
+    "product_brand": "Rangriti",
+    "product_price": 899,
+    "product_details": "Trendy high-low hem kurti with a solid color pattern.",
+    "product_image": "https://m.media-amazon.com/images/I/71GL19DQQIL._SY741_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81TZy+Ly48L._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71HhSkKe89L._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71vkVBC-lSL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71LbuYeDCuL._SX679_.jpg"
+    },
+    "product_discount": 18,
+    "product_qty": 17,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Asymmetrical Kurti",
+    "product_brand": "Jaipur Kurti",
+    "product_price": 1199,
+    "product_details": "Unique asymmetrical kurti with a vibrant print, ideal for modern fashion lovers.",
+    "product_image": "https://m.media-amazon.com/images/I/61AOOiGeMXL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81UoPFJLwbL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81HhM00ipqL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71SaboR2fCL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71cjIJSApFL._SX679_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 10,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Shirt Style Kurti",
+    "product_brand": "Max Fashion",
+    "product_price": 899,
+    "product_details": "Casual shirt-style kurti with a button-down front, comfortable and trendy.",
+    "product_image": "https://m.media-amazon.com/images/I/71ZvUDllMnL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61C8bB79jlL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71FFzmA62qL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71xXyeUtmLL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71zV6bKRhJL._SY741_.jpg"
+    },
+    "product_discount": 12,
+    "product_qty": 25,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "Kaftan Style Kurti",
+    "product_brand": "Libas",
+    "product_price": 999,
+    "product_details": "Comfortable kaftan style kurti with an airy, relaxed fit for summer days.",
+    "product_image": "https://m.media-amazon.com/images/I/71wkuqXY7ML._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/716WatQSp4L._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71HxYHuShRL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91RORy1wHjL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71IPbsTQP+L._SX679_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 15,
+    "product_category": "kurtis"
+  },
+  {
+    "gender": "female",
+    "product_name": "V-Neck Floral Top",
+    "product_brand": "Zara",
+    "product_price": 999,
+    "product_details": "Stylish V-neck floral print top, perfect for casual outings.",
+    "product_image": "https://m.media-amazon.com/images/I/71ramWG6Z0L._SY741_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81uFH-dpM4L._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81uFH-dpM4L._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71ZdI4PiWcL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61rwTYDffHL._SY741_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 30,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Ruffled Sleeve Blouse",
+    "product_brand": "H&M",
+    "product_price": 1299,
+    "product_details": "Elegant blouse with ruffled sleeves, suitable for formal events.",
+    "product_image": "https://m.media-amazon.com/images/I/61MlaXqf-0L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61XrukijUsL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/611Gg5rJ3EL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61GmUaNqwWL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61HdLqQ9tnL._SY741_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 25,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Off-Shoulder Top",
+    "product_brand": "Forever 21",
+    "product_price": 899,
+    "product_details": "Trendy off-shoulder top, ideal for summer days.",
+    "product_image": "https://m.media-amazon.com/images/I/91nMuIyt4SL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/91zwv0rEjcL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/91zwv0rEjcL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/8105R-dcy0L._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/A1KxSsPaRpL._SX679_.jpg"
+    },
+    "product_discount": 10,
+    "product_qty": 40,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Peplum Top",
+    "product_brand": "Mango",
+    "product_price": 1499,
+    "product_details": "Classic peplum top with a fitted waist, perfect for evening wear.",
+    "product_image": "https://m.media-amazon.com/images/I/81k8zBZq+TL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/819vGnOjXHL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81ecma45tFL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/81ji5kEkCNL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81M8jZaPT+L._SY741_.jpg"
+    },
+    "product_discount": 48,
+    "product_qty": 15,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "High Neck Ribbed Top",
+    "product_brand": "Uniqlo",
+    "product_price": 1199,
+    "product_details": "Comfortable high neck ribbed top, suitable for layering.",
+    "product_image": "https://m.media-amazon.com/images/I/61eJd3LYeoL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/61HkqWJPaIL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61Vq-+FvJbL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/615rwmR-WEL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71gnQ5Y2eoL._SY741_.jpg"
+    },
+    "product_discount": 12,
+    "product_qty": 20,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Cropped Hoodie",
+    "product_brand": "Nike",
+    "product_price": 1999,
+    "product_details": "Sporty cropped hoodie for a trendy look.",
+    "product_image": "https://m.media-amazon.com/images/I/617KL1AKGrL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/617KL1AKGrL._SY879_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61TbJ8QbtJL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61nAJHGj-zL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/718PuKe9LJL._SY741_.jpg"
+    },
+    "product_discount": 25,
+    "product_qty": 12,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Button-Down Shirt",
+    "product_brand": "GAP",
+    "product_price": 1299,
+    "product_details": "Classic button-down shirt, ideal for casual or workwear.",
+    "product_image": "https://m.media-amazon.com/images/I/71xdjsBrq6L._UY741_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71f5tURfO8L._UY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71dfPbEyU6L._UY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71RXO4u4ktL._UY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71VAPquK4DL._UY741_.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 18,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Tie-Front Crop Top",
+    "product_brand": "Urban Outfitters",
+    "product_price": 999,
+    "product_details": "Trendy tie-front crop top, perfect for casual outings.",
+    "product_image": "https://m.media-amazon.com/images/I/614UJ9ivenL._SY879_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/614UJ9ivenL._SY879_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/610TXsJY+eL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71hHz8cdC-L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61IOuyxRapL._SY741_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 25,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Wrap Top",
+    "product_brand": "Banana Republic",
+    "product_price": 1499,
+    "product_details": "Sophisticated wrap top with a belted waist, perfect for evening wear.",
+    "product_image": "https://m.media-amazon.com/images/I/61-8poOzs8L._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/6173uNetGCL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61+I3zPfNiL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71K9YYQbz7L._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/718KJcfw03L._SX569_.jpg"
+    },
+    "product_discount": 18,
+    "product_qty": 14,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Graphic Print T-Shirt",
+    "product_brand": "Puma",
+    "product_price": 699,
+    "product_details": "Casual graphic print t-shirt for everyday wear.",
+    "product_image": "https://m.media-amazon.com/images/I/61+KyhRanXL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51C5UuMjlNL._SY741_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51C5UuMjlNL._SY741_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/511dNIt16hL._SY741_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71geJYC7X5L._SY741_.jpg"
+    },
+    "product_discount": 3,
+    "product_qty": 30,
+    "product_category": "tops"
+  },
+  {
+    "gender": "female",
+    "product_name": "Classic Gold Hoop Earrings",
+    "product_brand": "Accessorize",
+    "product_price": 2399,
+    "product_details": "Timeless gold hoop earrings, perfect for both casual and formal outfits.",
+    "product_image": "https://m.media-amazon.com/images/I/519buKiYGDL._SY695_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71hTnzq6dqL._SY625_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61ni8Wl71KL._SY625_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/713n8o9zuGL._SY625_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61nkvhlXWkL._SY625_.jpg"
+    },
+    "product_discount": 63,
+    "product_qty": 50,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Leather Strap Watch",
+    "product_brand": "Fossil",
+    "product_price": 4999,
+    "product_details": "Elegant leather strap watch with a minimalist dial design.",
+    "product_image": "https://m.media-amazon.com/images/I/61Zn8ij5vqS._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71atMJhTAYS._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51lspLSQkuS._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61daA0-hLIS._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61daA0-hLIS._SX679_.jpg"
+    },
+    "product_discount": 60,
+    "product_qty": 20,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Silk Scarf",
+    "product_brand": "Mango",
+    "product_price": 999,
+    "product_details": "Soft silk scarf with floral prints, ideal for adding color to any outfit.",
+    "product_image": "https://m.media-amazon.com/images/I/41Xh0o3lmhL.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51BrDzqubzL.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/51XRmy1XMHL.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/41jj6emwtPL.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/5123Y03+XFL.jpg"
+    },
+    "product_discount": 20,
+    "product_qty": 35,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Layered Necklace",
+    "product_brand": "Forever 21",
+    "product_price": 4999,
+    "product_details": "Trendy layered necklace with charm pendants for a chic look.",
+    "product_image": "https://m.media-amazon.com/images/I/61u8eEoTevL._SY695_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/41MA8-M1ONL.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/5109tLBgEjL._SY625_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61oMzfSjtLL._SY625_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71qpz67UCNL._SY625_.jpg"
+    },
+    "product_discount": 33,
+    "product_qty": 45,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Leather Handbag",
+    "product_brand": "Michael Kors",
+    "product_price": 7999,
+    "product_details": "Classic leather handbag with ample space, perfect for everyday use.",
+    "product_image": "https://m.media-amazon.com/images/I/811MF+i57rL._SY695_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81AAdBs+ujL._SY695_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81CjJhh9b4L._SY695_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91o1+t5tAoL._SY695_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81R2F7ROMvL._SY695_.jpg"
+    },
+    "product_discount": 46,
+    "product_qty": 10,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Aviator Sunglasses",
+    "product_brand": "Ray-Ban",
+    "product_price": 3599,
+    "product_details": "Classic aviator sunglasses with UV protection, ideal for sunny days.",
+    "product_image": "https://m.media-amazon.com/images/I/51XKrrddiCL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/51fd3dQCelL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/71q4ZENAx7L._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61FrpR1dfaL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/61lY2l3tCFL._SX679_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 25,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Stackable Bracelets",
+    "product_brand": "Chumbak",
+    "product_price": 1999,
+    "product_details": "Set of stackable bracelets with beads and charms.",
+    "product_image": "https://m.media-amazon.com/images/I/71L7qG-v4vL._SY625_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/716kRR4BQ3L._SY625_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/61WAgMo77WL._SY625_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/61J1vmUuhPL._SY625_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/716kRR4BQ3L._SY625_.jpg"
+    },
+    "product_discount": 86,
+    "product_qty": 40,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Bohemian Earrings",
+    "product_brand": "Urban Outfitters",
+    "product_price": 4299,
+    "product_details": "Statement bohemian earrings, ideal for a boho-chic style.",
+    "product_image": "https://m.media-amazon.com/images/I/61UV2nutxhL._SY695_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81PhLm3LjsL._SY625_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/8141U0MVV4L._SY625_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/71oojAo+tPL._SY625_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/71FRTKZgrhL._SY625_.jpg"
+    },
+    "product_discount": 86,
+    "product_qty": 30,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Bucket Hat",
+    "product_brand": "H&M",
+    "product_price": 699,
+    "product_details": "Casual bucket hat with a wide brim, perfect for sunny days.",
+    "product_image": "https://m.media-amazon.com/images/I/61EMgDT4GFL._SX569_.jpg",
+   "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/81xEyJKbppL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/916ohbCE1aL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91l9LujCCUL._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/81Or6HF1RuL._SX679_.jpg"
+    },
+    "product_discount": 15,
+    "product_qty": 25,
+    "product_category": "women-accessories"
+  },
+  {
+    "gender": "female",
+    "product_name": "Ribbed Knit Beanie",
+    "product_brand": "Uniqlo",
+    "product_price": 999,
+    "product_details": "Cozy ribbed knit beanie, perfect for cold weather.",
+    "product_image": "https://m.media-amazon.com/images/I/71w6rrFrxbL._SX679_.jpg",
+    "images": {
+      "img_url1": "https://m.media-amazon.com/images/I/71eW-LRXBNL._SX679_.jpg",
+      "img_url2": "https://m.media-amazon.com/images/I/81LpN5EbQCL._SX679_.jpg",
+      "img_url3": "https://m.media-amazon.com/images/I/91+A7vhhR2L._SX679_.jpg",
+      "img_url4": "https://m.media-amazon.com/images/I/91COygSwwQL._SX679_.jpg"
+    },
+    "product_discount": 69,
+    "product_qty": 50,
+    "product_category": "women-accessories"
   }
 ]

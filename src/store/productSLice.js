@@ -3,15 +3,24 @@ import axios from "axios";
 
 export const getAllProducts = createAsyncThunk(
   "products/get",
-  async ({page, category , price}, { rejectWithValue }) => {
-    
-    const [lowerRange, higherRange] = price.split(" , ");
+  async ({ page, category, price }, { rejectWithValue }) => {
+    let lowerRange = 0;
+    let higherRange = 5000; // or any default maximum range
+    const priceRange = price.split(" - ");
+    console.log(priceRange);
+    lowerRange = priceRange[0] || lowerRange;
+    higherRange = priceRange[1] || higherRange;
+
     console.log(lowerRange, higherRange);
+
     
-    const categoryFilter = category !== "all" ? category : "";
-    const rangeFilter = lowerRange === "all"?  "" : lowerRange;
+      var url = `http://localhost:8080/api/products?product_category=${category}&product_price[gte]=${lowerRange}&product_price[lte]=${higherRange}`;
+   
+
+    // const categoryFilter = category !== "all" ? category : "";
+    // const rangeFilter = lowerRange === "all"?  "" : lowerRange;
     console.log(lowerRange, higherRange);
-    const url = `http://localhost:8080/api/products?page=${page}&limit=8&product_category=${categoryFilter}&product_price=${rangeFilter}`;
+
     // console.log(lowerRange, higherRange);
     try {
       const products = await axios.get(url);
@@ -30,35 +39,33 @@ const productSlice = createSlice({
     rejected: false,
     isloading: false,
     error: null,
-    page:1,
-    limit:8,
-    category:"all",
-    price: "all",
+    page: 1,
+    limit: 8,
+    category: "all",
+    price: "0 - 5000",
   },
 
   reducers: {
-    handlePage: (state,action) => {
+    handlePage: (state, action) => {
       state.page = action.payload;
     },
     handlePageIncrement: (state) => {
-      if(state.page < Math.round(state.products.length / state.limit)){
+      if (state.page < Math.round(state.products.length / state.limit)) {
         state.page += 1;
       }
-      
     },
     handlePageDecrement: (state) => {
-      if(state.page > 1){
+      if (state.page > 1) {
         state.page -= 1;
       }
-      
     },
-    handleCategory: (state,action) => {
+    handleCategory: (state, action) => {
       state.category = action.payload;
     },
-    handlePrice: (state,action) => {
+    handlePrice: (state, action) => {
       state.price = action.payload;
       console.log(state.price);
-    }
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(getAllProducts.fulfilled, (state, action) => {

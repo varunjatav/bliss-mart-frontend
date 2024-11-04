@@ -35,6 +35,27 @@ const Filteration = () => {
           <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("shirts")}/>
           <span className="pl-2">Shirts</span>
         </div>
+        <div>
+          <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("accessories")}/>
+          <span className="pl-2">Accessories</span>
+        </div>
+
+        <div>
+          <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("women-accessories")}/>
+          <span className="pl-2">Women Accessories</span>
+        </div>
+        <div>
+          <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("sarees")}/>
+          <span className="pl-2">Saree</span>
+        </div>
+        <div>
+          <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("tops")}/>
+          <span className="pl-2">Tops</span>
+        </div>
+        <div>
+          <input type="radio" name="category" id="shirts" onClick={() => handleProductCategory("kurtis")}/>
+          <span className="pl-2">Kurtis</span>
+        </div>
       </div>
       <h1 className="font-bold">Price</h1>
       <div className="py-5 flex flex-col gap-5">
@@ -43,7 +64,7 @@ const Filteration = () => {
       <span className="pl-2">All</span>
       </div>
       <div>
-      <input type="radio" name="price" id="all" onClick={() => handlePriceFilter("0 - 499")}/>
+      <input type="radio" name="price" id="all" onClick={() => handlePriceFilter("0 - 5000")}/>
       <span className="pl-2">0 - 499</span>
       </div>
       <div>
