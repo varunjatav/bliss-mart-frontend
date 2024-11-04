@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const getAllProducts = createAsyncThunk(
-  "products/get",
+  "get/allproducts",
   async ({ page, category, price }, { rejectWithValue }) => {
     let lowerRange = 0;
     let higherRange = 5000; // or any default maximum range
@@ -32,6 +32,17 @@ export const getAllProducts = createAsyncThunk(
   }
 );
 
+
+export const singleProduct = createAsyncThunk("get/singleProduct" , async(productId, {rejectWithValue}) => {
+  try {
+    const response = await axios.get(`http://localhost:8080/api/singleproduct/${productId}`);
+    return response.data.singleProduct;
+  } catch (error) {
+    console.log(error);
+    return rejectWithValue(error);
+  }
+}); 
+
 const productSlice = createSlice({
   name: "products",
   initialState: {
@@ -43,6 +54,8 @@ const productSlice = createSlice({
     limit: 8,
     category: "all",
     price: "0 - 5000",
+    // productId: null,
+    singleProduct: {},
   },
 
   reducers: {
@@ -64,8 +77,10 @@ const productSlice = createSlice({
     },
     handlePrice: (state, action) => {
       state.price = action.payload;
-      console.log(state.price);
     },
+    setProductId : (state, action) => {
+      state.productId = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder.addCase(getAllProducts.fulfilled, (state, action) => {
@@ -85,6 +100,24 @@ const productSlice = createSlice({
       state.rejected = true;
       state.products = [];
       state.error = action.payload;
+    });
+    builder.addCase(singleProduct.fulfilled, (state, action) => {
+      state.isloading = false;
+      state.rejected = false;
+      state.singleProduct = action.payload;
+      state.error = null;
+    });
+    builder.addCase(singleProduct.pending, (state, action) => {
+      state.isloading = true;
+      state.rejected = false;
+      state.singleProduct = {};
+      state.error = null;
+    });
+    builder.addCase(singleProduct.rejected, (state, action) => {
+      state.isloading = false;
+      state.rejected = true;
+      state.singleProduct = {};
+      state.error = null;
     });
   },
 });

@@ -6,19 +6,27 @@ import blissMartStore from './store/store.js'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import AllProducts from './components/AllProducts.jsx'
+import ProductDetails from './components/ProductDetails.jsx'
+import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 const router = createBrowserRouter([
   {
     path:"/",
     element: <App/>,
+    errorElement: <ErrorBoundary/>,
     children: [
      {
       index: true,
       element: <Home/>
      },
      {
-      path:'/product-list',
-      element: <AllProducts/>
+      path:'product-list',
+      element: <AllProducts/>,
+     },
+     {
+      path:"single-product/:productId",
+      element: <ProductDetails/>,
+      errorElement: <ErrorBoundary/>
      }
     ]
   }

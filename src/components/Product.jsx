@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function Product({product}) {
   if(product){
     return (
-      <div className="bg-white cursor-pointer">
+      <Link className="bg-white cursor-pointer" to={`/single-product/${product._id}`}>
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
-          <a className="group">
+          <div className="group">
             <div className=" aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img
                 alt={product.product_name}
@@ -15,9 +17,9 @@ export default function Product({product}) {
             <h3 className="text-md text-gray-700">{product.product_brand}</h3>
             <p className="mt-1 text-sm text-gray-900">{product.product_details}</p>
             <p className="mt-1 text-lg font-medium text-gray-900">Rs. {product.product_price}</p>
-          </a>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
   
