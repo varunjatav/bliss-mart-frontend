@@ -121,10 +121,10 @@ export default function Example() {
   const persistedToken = localStorage.getItem("token");
 
   const cartLength = useSelector((state) => state.cart.cartLength);
-  console.log(cartLength);
+  // console.log(cartLength);
   const userstate = useSelector((state) => state.auth);
   const { isLoggedIn, token, refreshToken, userRole, userId } = userstate;
-  console.log(isLoggedIn, token, refreshToken, userRole, userId);
+  // console.log(isLoggedIn, token, refreshToken, userRole, userId);
 
   const handleProductCategory = (category) => {
     dispatch(productActions.handleCategory(category));

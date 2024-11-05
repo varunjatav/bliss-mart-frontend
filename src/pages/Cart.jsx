@@ -3,33 +3,45 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useDispatch, useSelector } from "react-redux";
-import { decrementCart, deleteCart, fetchCartData } from "../store/cartSlice";
+import {
+  cartActions,
+  decrementCart,
+  deleteCart,
+  fetchCartData,
+  postToCart,
+} from "../store/cartSlice";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const cartData = useSelector((state) => state);
-  console.log("cart data from cart.jsx", cartData.cart.cart);
+  const cartData = useSelector((state) => state.cart);
+ 
+  console.log("total discount from cart.jsx",cartData.totalDiscount);
   const userId = localStorage.getItem("userId");
-  console.log("user id from cart.jsx", userId);
+
 
   useEffect(() => {
     dispatch(fetchCartData(userId));
+    dispatch(cartActions.TotalPrice());
   }, [dispatch]);
-  console.log(cartData?.cart?.cart?.items);
+  console.log(cartData?.cart?.items);
 
   const handleDecrement = (productId) => {
     dispatch(decrementCart({ userId, productId }));
   };
   const handleDelete = (productId) => {
-    dispatch(deleteCart({ userId, productId }))
-  }
+    dispatch(deleteCart({ userId, productId }));
+  };
+
+  const handleIncrement = (productId) => {
+    dispatch(postToCart({ _id: productId, userId }));
+  };
 
   return (
     <section className="container bg-gray-300  p-24">
       <h1 className="font-bold text-lg">Shopping Cart</h1>
       <p>
         <span className="font-semibold text-md">
-          {cartData.cart.cartLength} item
+          {cartData.cartLength} item
         </span>{" "}
         in your cart.
       </p>
@@ -46,9 +58,9 @@ const Cart = () => {
               </tr>
             </thead>
             <tbody>
-              {cartData?.cart?.cartLength > 0 ? (
-                cartData?.cart?.cart?.items?.map((cartItem, i) => {
-                  console.log(cartItem.product._id);
+              {cartData?.cartLength > 0 ? (
+                cartData?.cart?.items?.map((cartItem, i) => {
+                  // console.log(cartItem.product._id);
                   return (
                     <tr key={cartItem._id} className="py-2">
                       <td>
@@ -78,7 +90,10 @@ const Cart = () => {
                         <span className="px-2 text-lg font-bold">
                           {cartItem.quantity}
                         </span>
-                        <button className="bg-green-500 px-2 rounded-md text-white">
+                        <button
+                          className="bg-green-500 px-2 rounded-md text-white"
+                          onClick={() => handleIncrement(cartItem.product._id)}
+                        >
                           <AddIcon />
                         </button>
                       </td>
@@ -89,10 +104,13 @@ const Cart = () => {
                             (cartItem.product.product_price *
                               cartItem.product.product_discount) /
                               100
-                        ) * 1}
+                        ) * cartItem.quantity}
                       </td>
                       <td className="text-center  ">
-                        <button className="bg-red-500 items-center p-2 rounded-md text-white" onClick={() => handleDelete(cartItem.product._id)}>
+                        <button
+                          className="bg-red-500 items-center p-2 rounded-md text-white"
+                          onClick={() => handleDelete(cartItem.product._id)}
+                        >
                           <DeleteForeverIcon />
                         </button>
                       </td>
@@ -117,11 +135,11 @@ const Cart = () => {
             <h2>
               {" "}
               <span className="font-bold text-md "> Total Price: </span>{" "}
-              &#x20b9;
+              &#x20b9; {cartData.totalAmount}
             </h2>
             <h2>
               {" "}
-              <span className="font-bold text-md "> Total Discount: </span>{" "}
+              <span className="font-bold text-md "> Total Discount: </span>{" "} - &#x20b9; {cartData.totalDiscount}
             </h2>
           </div>
 
@@ -129,7 +147,7 @@ const Cart = () => {
           <div className="pt-4">
             <h2>
               {" "}
-              <span className="font-bold text-md "> Overall: </span>{" "}
+              <span className="font-bold text-md "> Overall: </span>{" "} &#x20b9; {cartData.totalAmount - cartData.totalDiscount}
             </h2>
             <div className="py-4">
               <button className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">

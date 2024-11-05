@@ -18,7 +18,7 @@ export const postToCart = createAsyncThunk(
 export const fetchCartData = createAsyncThunk(
   "cart/fetch",
   async (userId, { rejectWithValue }) => {
-    console.log("userId", userId);
+    // console.log("userId", userId);
 
     try {
       const response = await axios.get(
@@ -28,7 +28,7 @@ export const fetchCartData = createAsyncThunk(
         console.error("Fetch failed with status:", response.status);
         return rejectWithValue("Failed to fetch cart data");
       }
-      console.log(response.data);
+      // console.log(response.data);
       return response.data;
     } catch (error) {
       console.error(error);
@@ -39,11 +39,13 @@ export const fetchCartData = createAsyncThunk(
 
 export const decrementCart = createAsyncThunk(
   "cart/decrement",
-  async ({userId,productId}, { rejectWithValue }) => {
-    console.log(userId, productId);
-    
+  async ({ userId, productId }, { rejectWithValue }) => {
+    // console.log(userId, productId);
+
     try {
-      const response = await axios.delete(`http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`);
+      const response = await axios.delete(
+        `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
+      );
       console.log(response.data);
       return response.data;
     } catch (error) {
@@ -53,19 +55,23 @@ export const decrementCart = createAsyncThunk(
   }
 );
 
-export const deleteCart = createAsyncThunk('cart/delete', async ({userId, productId}) => {
-  console.log(userId, productId);
-    
+export const deleteCart = createAsyncThunk(
+  "cart/delete",
+  async ({ userId, productId }) => {
+    console.log(userId, productId);
+
     try {
-      const response = await axios.delete(`http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`);
+      const response = await axios.delete(
+        `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
+      );
       console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error.message);
       rejectWithValue(error.message);
     }
-  
-})
+  }
+);
 
 const cartSlice = createSlice({
   name: "cart",
@@ -74,9 +80,37 @@ const cartSlice = createSlice({
     cart: [],
     error: null,
     isLoading: false,
+    totalAmount: 0,
+    totalDiscount: 0,
     // quantity: 1,
   },
-  reducers: {},
+  reducers: {
+    TotalPrice: (state) => {
+      state.totalAmount = 0; // Reset total before calculating
+      // Check if cart items are available
+      state.totalDiscount = 0;
+      console.log(state.cart, state.cart.items);
+
+      if (state.cart && state.cart.items) {
+        for (let i = 0; i < state.cartLength; i++) {
+          const price =
+            state.cart.items[i].product.product_price *
+            state.cart.items[i].quantity;
+          const discount =
+            state.cart.items[i].product.product_price *
+            state.cart.items[i].quantity *
+            (+(state.cart.items[i].product.product_discount) / 100);
+          console.log("price: " + price);
+          console.log("discount: " + +(discount));
+
+          state.totalAmount += price || 0;
+          state.totalDiscount += discount;
+        }
+      }
+      console.log("Total Amount:", state.totalAmount);
+      console.log("Total Discount:", +(state.totalDiscount));
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(postToCart.fulfilled, (state, action) => {
       state.error = null;
@@ -96,7 +130,9 @@ const cartSlice = createSlice({
       state.cart = action.payload;
       state.error = null;
       state.isLoading = false;
-      console.log(action.payload);
+      if (action.payload.items) {
+        cartSlice.caseReducers.TotalPrice(state);
+      }
     });
     builder.addCase(fetchCartData.pending, (state, action) => {
       state.cartLength = 0;
