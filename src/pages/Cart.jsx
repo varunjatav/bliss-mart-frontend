@@ -3,24 +3,33 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCartData } from "../store/cartSlice";
+import { decrementCart, deleteCart, fetchCartData } from "../store/cartSlice";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const cartData = useSelector((state) => state.cart);
-  console.log("cart data from cart.jsx", cartData.cart);
+  const cartData = useSelector((state) => state);
+  console.log("cart data from cart.jsx", cartData.cart.cart);
   const userId = localStorage.getItem("userId");
-console.log("user id from cart.jsx", userId);
+  console.log("user id from cart.jsx", userId);
 
   useEffect(() => {
     dispatch(fetchCartData(userId));
   }, [dispatch]);
+  console.log(cartData?.cart?.cart?.items);
+
+  const handleDecrement = (productId) => {
+    dispatch(decrementCart({ userId, productId }));
+  };
+  const handleDelete = (productId) => {
+    dispatch(deleteCart({ userId, productId }))
+  }
+
   return (
     <section className="container bg-gray-300  p-24">
       <h1 className="font-bold text-lg">Shopping Cart</h1>
       <p>
         <span className="font-semibold text-md">
-          {cartData.cartLength} item
+          {cartData.cart.cartLength} item
         </span>{" "}
         in your cart.
       </p>
@@ -37,52 +46,65 @@ console.log("user id from cart.jsx", userId);
               </tr>
             </thead>
             <tbody>
-              {cartData?.cart?.length > 0 ? (
-                cartData?.cart?.map((cartItem, i) => (
-                  <tr key={cartItem._id} className="py-2">
-                    <td>
-                      <img
-                        src={cartItem.product_image}
-                        alt={cartItem.product_name}
-                        loading="lazy"
-                        className="w-20 m-auto h-24"
-                      />
-                    </td>
-                    <td className="text-center font-bold">
-                      &#x20b9;{" "}
-                      {Math.round(
-                        cartItem.product_price -
-                          (cartItem.product_price * cartItem.product_discount) /
-                            100
-                      )}
-                    </td>
-                    <td className="text-center">
-                      <button className="bg-red-500 px-2 rounded-md text-white">
-                        <RemoveIcon />
-                      </button>
-                      <span className="px-2 text-lg font-bold">1</span>
-                      <button className="bg-green-500 px-2 rounded-md text-white">
-                        <AddIcon />
-                      </button>
-                    </td>
-                    <td className="text-center font-bold">
-                      &#x20b9;{" "}
-                      {Math.round(
-                        cartItem.product_price -
-                          (cartItem.product_price * cartItem.product_discount) /
-                            100
-                      ) * 1}
-                    </td>
-                    <td className="text-center  ">
-                      <button className="bg-red-500 items-center p-2 rounded-md text-white">
-                        <DeleteForeverIcon />
-                      </button>
-                    </td>
-                  </tr>
-                ))
+              {cartData?.cart?.cartLength > 0 ? (
+                cartData?.cart?.cart?.items?.map((cartItem, i) => {
+                  console.log(cartItem.product._id);
+                  return (
+                    <tr key={cartItem._id} className="py-2">
+                      <td>
+                        <img
+                          src={cartItem.product.product_image}
+                          alt={cartItem.product.product_name}
+                          loading="lazy"
+                          className="w-20 m-auto h-24"
+                        />
+                      </td>
+                      <td className="text-center font-bold">
+                        &#x20b9;{" "}
+                        {Math.round(
+                          cartItem.product.product_price -
+                            (cartItem.product.product_price *
+                              cartItem.product.product_discount) /
+                              100
+                        )}
+                      </td>
+                      <td className="text-center">
+                        <button
+                          className="bg-red-500 px-2 rounded-md text-white"
+                          onClick={() => handleDecrement(cartItem.product._id)}
+                        >
+                          <RemoveIcon />
+                        </button>
+                        <span className="px-2 text-lg font-bold">
+                          {cartItem.quantity}
+                        </span>
+                        <button className="bg-green-500 px-2 rounded-md text-white">
+                          <AddIcon />
+                        </button>
+                      </td>
+                      <td className="text-center font-bold">
+                        &#x20b9;{" "}
+                        {Math.round(
+                          cartItem.product.product_price -
+                            (cartItem.product.product_price *
+                              cartItem.product.product_discount) /
+                              100
+                        ) * 1}
+                      </td>
+                      <td className="text-center  ">
+                        <button className="bg-red-500 items-center p-2 rounded-md text-white" onClick={() => handleDelete(cartItem.product._id)}>
+                          <DeleteForeverIcon />
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })
               ) : (
                 <tr>
-                  <td colSpan="5" className="text-center font-bold text-xl py-10">
+                  <td
+                    colSpan="5"
+                    className="text-center font-bold text-xl py-10"
+                  >
                     Your cart is empty.
                   </td>
                 </tr>

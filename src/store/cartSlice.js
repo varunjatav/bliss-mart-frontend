@@ -19,10 +19,12 @@ export const fetchCartData = createAsyncThunk(
   "cart/fetch",
   async (userId, { rejectWithValue }) => {
     console.log("userId", userId);
-    
+
     try {
-      const response = await axios.get("http://localhost:8080/api/cart",userId);
-      if(response.status !== 200) {
+      const response = await axios.get(
+        `http://localhost:8080/api/cart?userId=${userId}`
+      );
+      if (response.status !== 200) {
         console.error("Fetch failed with status:", response.status);
         return rejectWithValue("Failed to fetch cart data");
       }
@@ -35,6 +37,36 @@ export const fetchCartData = createAsyncThunk(
   }
 );
 
+export const decrementCart = createAsyncThunk(
+  "cart/decrement",
+  async ({userId,productId}, { rejectWithValue }) => {
+    console.log(userId, productId);
+    
+    try {
+      const response = await axios.delete(`http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`);
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.log(error.message);
+      rejectWithValue(error.message);
+    }
+  }
+);
+
+export const deleteCart = createAsyncThunk('cart/delete', async ({userId, productId}) => {
+  console.log(userId, productId);
+    
+    try {
+      const response = await axios.delete(`http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`);
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.log(error.message);
+      rejectWithValue(error.message);
+    }
+  
+})
+
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
@@ -42,6 +74,7 @@ const cartSlice = createSlice({
     cart: [],
     error: null,
     isLoading: false,
+    // quantity: 1,
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -59,7 +92,7 @@ const cartSlice = createSlice({
         state.isLoading = false;
       });
     builder.addCase(fetchCartData.fulfilled, (state, action) => {
-      state.cartLength = action.payload.cart.length;
+      state.cartLength = action.payload.items.length;
       state.cart = action.payload;
       state.error = null;
       state.isLoading = false;
@@ -72,11 +105,14 @@ const cartSlice = createSlice({
       state.isLoading = true;
     });
     builder.addCase(fetchCartData.rejected, (state, action) => {
-        state.cartLength = 0;
-        state.cart = [];
-        state.error = state.error;
-        state.isLoading = false;
-      });
+      state.cartLength = 0;
+      state.cart = [];
+      state.error = state.error;
+      state.isLoading = false;
+    });
+    // builder.addCase(decrementCart.fulfilled, (state, action) => {
+    //   state.quantity = action.payload.quantity;
+    // });
   },
 });
 
