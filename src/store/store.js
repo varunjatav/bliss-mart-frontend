@@ -1,3 +1,4 @@
+import authSlice from "./authSlice";
 import cartSlice from "./cartSlice";
 import productSlice from "./productSlice";
 
@@ -7,7 +8,8 @@ const blissMartStore = configureStore({
     name:"blissMart",
     reducer: {
         products: productSlice.reducer,
-        cart: cartSlice.reducer
+        cart: cartSlice.reducer,
+        auth: authSlice.reducer
     }
 });
 

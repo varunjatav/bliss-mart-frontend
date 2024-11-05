@@ -17,9 +17,15 @@ export const postToCart = createAsyncThunk(
 
 export const fetchCartData = createAsyncThunk(
   "cart/fetch",
-  async (_, { rejectWithValue }) => {
+  async (userId, { rejectWithValue }) => {
+    console.log("userId", userId);
+    
     try {
-      const response = await axios.get("http://localhost:8080/api/cart");
+      const response = await axios.get("http://localhost:8080/api/cart",userId);
+      if(response.status !== 200) {
+        console.error("Fetch failed with status:", response.status);
+        return rejectWithValue("Failed to fetch cart data");
+      }
       console.log(response.data);
       return response.data;
     } catch (error) {

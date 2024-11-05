@@ -9,6 +9,8 @@ import AllProducts from "./pages/AllProducts.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import Cart from "./pages/Cart.jsx";
+import Login from "./pages/Login.jsx";
+import SignUp from "./pages/SignUp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,13 @@ const router = createBrowserRouter([
         path: "cart",
         element: <Cart />,
       },
+      {
+        path:"login",
+        element: <Login />,
+      },{
+        path:"signup",
+        element: <SignUp/>
+      }
     ],
   },
 ]);

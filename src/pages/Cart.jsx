@@ -8,10 +8,12 @@ import { fetchCartData } from "../store/cartSlice";
 const Cart = () => {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart);
-  console.log("cart data from cart.jsx", cartData.cart.cart);
+  console.log("cart data from cart.jsx", cartData.cart);
+  const userId = localStorage.getItem("userId");
+console.log("user id from cart.jsx", userId);
 
   useEffect(() => {
-    dispatch(fetchCartData());
+    dispatch(fetchCartData(userId));
   }, [dispatch]);
   return (
     <section className="container bg-gray-300  p-24">
@@ -35,8 +37,8 @@ const Cart = () => {
               </tr>
             </thead>
             <tbody>
-              {cartData?.cart?.cart?.map((cartItem, i) => {
-                return (
+              {cartData?.cart?.length > 0 ? (
+                cartData?.cart?.map((cartItem, i) => (
                   <tr key={cartItem._id} className="py-2">
                     <td>
                       <img
@@ -77,8 +79,14 @@ const Cart = () => {
                       </button>
                     </td>
                   </tr>
-                );
-              })}
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="5" className="text-center font-bold text-xl py-10">
+                    Your cart is empty.
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
