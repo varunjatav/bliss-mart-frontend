@@ -6,7 +6,8 @@ export const postToCart = createAsyncThunk(
   async (body, { rejectWithValue }) => {
     try {
       const response = await axios.post("http://localhost:8080/api/cart", body);
-      console.log(response.data);
+      // console.log(response.data);
+      localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
     } catch (error) {
       console.error(error);
@@ -18,8 +19,6 @@ export const postToCart = createAsyncThunk(
 export const fetchCartData = createAsyncThunk(
   "cart/fetch",
   async (userId, { rejectWithValue }) => {
-    // console.log("userId", userId);
-
     try {
       const response = await axios.get(
         `http://localhost:8080/api/cart?userId=${userId}`
@@ -29,7 +28,9 @@ export const fetchCartData = createAsyncThunk(
         return rejectWithValue("Failed to fetch cart data");
       }
       // console.log(response.data);
+      localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
+      
     } catch (error) {
       console.error(error);
       return rejectWithValue(error.message);
@@ -46,7 +47,8 @@ export const decrementCart = createAsyncThunk(
       const response = await axios.delete(
         `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
       );
-      console.log(response.data);
+      // console.log(response.data);
+      localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
     } catch (error) {
       console.log(error.message);
@@ -64,7 +66,8 @@ export const deleteCart = createAsyncThunk(
       const response = await axios.delete(
         `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
       );
-      console.log(response.data);
+      // console.log(response.data);
+      localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
     } catch (error) {
       console.log(error.message);
@@ -72,6 +75,7 @@ export const deleteCart = createAsyncThunk(
     }
   }
 );
+
 
 const cartSlice = createSlice({
   name: "cart",

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
@@ -14,16 +14,22 @@ import {
 const Cart = () => {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart);
- 
-  console.log("total discount from cart.jsx",cartData.totalDiscount);
-  const userId = localStorage.getItem("userId");
+  const localCartData = JSON.parse(localStorage.getItem("cartData"));
+  const [persistData, setPersistData ] = useState(cartData || localCartData);
 
+  console.log("total discount from cart.jsx", cartData.totalDiscount);
+  const userId = localStorage.getItem("userId");
+  
+  console.log(localCartData.items);
 
   useEffect(() => {
     dispatch(fetchCartData(userId));
     dispatch(cartActions.TotalPrice());
-  }, [dispatch]);
-  console.log(cartData?.cart?.items);
+    setPersistData(localCartData);
+  }, [dispatch, userId]);
+  // console.log(cartData?.cart?.items);
+  console.log("persist cart data", persistData);
+  
 
   const handleDecrement = (productId) => {
     dispatch(decrementCart({ userId, productId }));
@@ -59,8 +65,8 @@ const Cart = () => {
             </thead>
             <tbody>
               {cartData?.cartLength > 0 ? (
-                cartData?.cart?.items?.map((cartItem, i) => {
-                  // console.log(cartItem.product._id);
+                localCartData.items?.map((cartItem, i) => {
+                  console.log(cartItem);
                   return (
                     <tr key={cartItem._id} className="py-2">
                       <td>
@@ -139,7 +145,8 @@ const Cart = () => {
             </h2>
             <h2>
               {" "}
-              <span className="font-bold text-md "> Total Discount: </span>{" "} - &#x20b9; {cartData.totalDiscount}
+              <span className="font-bold text-md "> Total Discount: </span> -
+              &#x20b9; {cartData.totalDiscount}
             </h2>
           </div>
 
@@ -147,7 +154,10 @@ const Cart = () => {
           <div className="pt-4">
             <h2>
               {" "}
-              <span className="font-bold text-md "> Overall: </span>{" "} &#x20b9; {cartData.totalAmount - cartData.totalDiscount}
+              <span className="font-bold text-md ">
+                {" "}
+                Overall:{" "}
+              </span> &#x20b9; {Math.round(cartData.totalAmount - cartData.totalDiscount)}
             </h2>
             <div className="py-4">
               <button className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">
