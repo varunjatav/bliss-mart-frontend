@@ -56,7 +56,7 @@ const MainCarousel = () => (
     mouseTracking
     items={items}
     autoPlay
-    autoPlayInterval={1000}
+    autoPlayInterval={2000}
     controlsStrategy="alternate"
     infinite
     disableButtonsControls

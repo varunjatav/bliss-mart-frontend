@@ -15,7 +15,7 @@ const Filteration = () => {
     dispatch(productActions.handlePrice(price));
   }
   return (
-    <div className="flex-1 w-[20%] py-10 hidden md:block">
+    <div className="flex-1 w-[20%] text-center hidden md:block">
       <h1 className="font-bold">Category</h1>
       <div className="py-5 flex flex-col gap-5">
         <div>
