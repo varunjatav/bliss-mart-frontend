@@ -51,7 +51,7 @@ const products = [
       "https://m.media-amazon.com/images/I/91TgHf0qI+L._AC_UY1100_.jpg",
     imageAlt: "Kurti",
     name: "Kurti's",
-    category: "kurti"
+    category: "kurtis"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const products = [
       "https://accessorizelondon.in/cdn/shop/products/MA-59301750001_1.jpg?crop=center&height=2000&v=1683285204&width=2000",
     imageAlt: "accessories",
     name: "Women's Accessories",
-    category: "women's accessories"
+    category: "women-accessories"
   },
 ];
 const HomeCategory = () => {

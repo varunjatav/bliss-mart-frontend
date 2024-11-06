@@ -12,6 +12,7 @@ import Cart from "./pages/Cart.jsx";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Checkout from "./pages/Checkout.jsx";
+import Success from "./pages/Success.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,12 +40,18 @@ const router = createBrowserRouter([
       {
         path:"login",
         element: <Login />,
-      },{
+      },
+      {
         path:"signup",
         element: <SignUp/>
-      },{
+      },
+      {
         path:'checkout',
         element: <Checkout/>
+      },
+      {
+        path:"success",
+        element: <Success/>
       }
     ],
   },

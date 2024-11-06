@@ -31,7 +31,6 @@ import {
 } from "@headlessui/react";
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -69,10 +68,10 @@ const navigation = {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "tops", href: "#" },
-            { name: "kurtis", href: "#" },
-            { name: "sarees", href: "#" },
-            { name: "women-accessories", href: "#" },
+            { name: "tops" },
+            { name: "kurtis" },
+            { name: "sarees" },
+            { name: "women-accessories" },
           ],
         },
       ],
@@ -103,10 +102,10 @@ const navigation = {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "shirts", href: "#" },
-            { name: "jeans", href: "#" },
-            { name: "accessories", href: "#" },
-            { name: "t-Shirts", href: "#" },
+            { name: "shirts" },
+            { name: "jeans" },
+            { name: "accessories" },
+            { name: "t-shirts" },
           ],
         },
       ],
@@ -235,12 +234,15 @@ export default function Example() {
                         >
                           {section.items.map((item) => (
                             <li key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
+                              <Link
+                                to={"/product-list"}
                                 className="-m-2 block p-2 text-gray-500"
+                                onClick={() =>
+                                  handleProductCategory(item.name)
+                                }
                               >
                                 {item.name}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -264,36 +266,24 @@ export default function Example() {
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
-                <a
-                  href="#"
+                <Link
+                  to="/signup"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Sign in
-                </a>
+                </Link>
               </div>
               <div className="flow-root">
-                <a
-                  href="#"
+                <Link
+                  to="/login"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Create account
-                </a>
+                </Link>
               </div>
             </div>
 
-            <div className="border-t border-gray-200 px-4 py-6">
-              <a href="#" className="-m-2 flex items-center p-2">
-                <img
-                  alt="tailwind png"
-                  src="https://tailwindui.com/plus/img/flags/flag-canada.svg"
-                  className="block h-auto w-5 flex-shrink-0"
-                />
-                <span className="ml-3 block text-base font-medium text-gray-900">
-                  CAD
-                </span>
-                <span className="sr-only">, change currency</span>
-              </a>
-            </div>
+            
           </DialogPanel>
         </div>
       </Dialog>
@@ -454,16 +444,7 @@ export default function Example() {
                     </Link>
                   </div>
                 )}
-                {/* Search */}
-                <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
-                    <MagnifyingGlassIcon
-                      aria-hidden="true"
-                      className="h-6 w-6"
-                    />
-                  </a>
-                </div>
+                
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">

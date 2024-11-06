@@ -25,8 +25,12 @@ const ProductList = () => {
   if (productState.rejected === true) {
     return <h1>404</h1>;
   }
+  if(products?.length === 0) {
+    return  <div className="text-center w-full"><h1 className="text-center font-bold">Product Not Found!! please try different filter</h1></div> 
+  }
 
   return (
+    
     <div className="flex-3 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 w-[80%] m-auto justify-center">
       {products &&
         products.map((product) => {

@@ -60,9 +60,10 @@ export const decrementCart = createAsyncThunk(
 export const deleteCart = createAsyncThunk(
   "cart/delete",
   async ({ userId, productId }) => {
+    // console.log(userId, productId);
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
+        `http://localhost:8080/api/cart/delete?userId=${userId}&productId=${productId}`
       );
       // console.log(response.data);
       // localStorage.setItem("cartData", JSON.stringify(response.data));

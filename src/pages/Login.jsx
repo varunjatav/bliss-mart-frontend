@@ -1,10 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions, loginUser } from "../store/authSlice";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const {isError, isLoggedIn, login, userRole} = useSelector(state => state.auth);
+  const navigate = useNavigate();
+  const { isError, isLoggedIn, login, userRole } = useSelector(
+    (state) => state.auth
+  );
   console.log(isError, isLoggedIn, login, userRole);
   // const loginState = useSelector(state => state.auth.login)
 
@@ -12,15 +16,20 @@ const Login = () => {
     const name = e.target.name;
     const value = e.target.value;
     // console.log(name, value);
-    
-    dispatch(authActions.setLoginForm({name, value}));
+
+    dispatch(authActions.setLoginForm({ name, value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("Submitting login:", loginState); // Log state before submission
-    dispatch(loginUser(login)).then(() => dispatch(authActions.resetLoginForm()));
-  }
+    dispatch(loginUser(login)).then(() =>
+      dispatch(authActions.resetLoginForm())
+    );
+    if (isLoggedIn) {
+      navigate("/product-list");
+    }
+  };
 
   return (
     <section className="container py-24">
@@ -40,6 +49,7 @@ const Login = () => {
             className="border-2 p-2 my-2 rounded-lg w-full hover:border-blue-500 active:border-blue-500"
             onChange={handleChange}
             value={login.email}
+            required
           />
         </div>
 
@@ -57,6 +67,7 @@ const Login = () => {
             className="border-2 p-2 mt-2 rounded-lg w-full hover:border-blue-500 active:border-blue-500"
             onChange={handleChange}
             value={login.password}
+            required
           />
         </div>
         <div className="py-4 flex items-center justify-center">
@@ -67,7 +78,11 @@ const Login = () => {
           />
         </div>
       </form>
-      {isError?.status === "fail" && <h1 className="text-center font-bold text-lg text-red-600">{isError.message} *</h1>}
+      {isError?.status === "fail" && (
+        <h1 className="text-center font-bold text-lg text-red-600">
+          {isError.message} *
+        </h1>
+      )}
     </section>
   );
 };

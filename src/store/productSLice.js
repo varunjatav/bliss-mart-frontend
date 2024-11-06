@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getAllProducts = createAsyncThunk(
   "get/allproducts",
-  async ({ page, category, price }, { rejectWithValue }) => {
+  async ({ category, price }, { rejectWithValue }) => {
     let lowerRange = 0;
     let higherRange = 5000; // or any default maximum range
     const priceRange = price.split(" - ");

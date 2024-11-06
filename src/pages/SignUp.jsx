@@ -10,6 +10,7 @@ const SignUp = () => {
     const handleSignUp = (e) => {
         e.preventDefault();
         dispatch(signupUser(signUpForm.signup)).then(() => dispatch(authActions.resetSignUpForm()));
+        alert("Sign up succeessfully!!")
     };
 
     const handleChange = (e) => {

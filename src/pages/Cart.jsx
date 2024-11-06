@@ -10,13 +10,14 @@ import {
   fetchCartData,
   postToCart,
 } from "../store/cartSlice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart);
+  const navigate = useNavigate();
   const localCartData = JSON.parse(localStorage.getItem("cartData"));
-  const [persistData, setPersistData ] = useState(cartData || localCartData);
+  // const [persistData, setPersistData ] = useState(cartData || localCartData);
 
   const userId = localStorage.getItem("userId");
   
@@ -34,6 +35,8 @@ const Cart = () => {
     });
   };
   const handleDelete = (productId) => {
+    
+    
     dispatch(deleteCart({ userId, productId })).then(() => {
       dispatch(fetchCartData(userId));
     });
@@ -45,8 +48,16 @@ const Cart = () => {
     });
   };
 
+  const handleCheckout = () => {
+    if(cartData.cartLength > 0){
+      navigate("/checkout");
+    }else{
+      alert("Your cart is Empty")
+    }
+  }
+
   return (
-    <section className="container bg-gray-300  p-24">
+    <section className="w-full bg-gray-300 py-24 px-2 md:px-10 lg:px-24">
       <h1 className="font-bold text-lg">Shopping Cart</h1>
       <p>
         <span className="font-semibold text-md">
@@ -54,13 +65,13 @@ const Cart = () => {
         </span>{" "}
         in your cart.
       </p>
-      <div className="flex justify-between gap-10 items-center pt-4">
-        <div className="flex-2 w-[70%] bg-white p-5 rounded-lg">
+      <div className="flex flex-col md:flex-row justify-between gap-10 items-center pt-4">
+        <div className="flex-2 w-full md:w-[70%] bg-white p-5 rounded-lg">
           <table className="w-full">
             <thead>
               <tr>
                 <th>Product</th>
-                <th>Price</th>
+                <th className="hidden md:block">Price</th>
                 <th>Quantity</th>
                 <th>Total Price</th>
                 <th>Delete</th>
@@ -79,7 +90,7 @@ const Cart = () => {
                           className="w-20 m-auto h-24"
                         />
                       </td>
-                      <td className="text-center font-bold">
+                      <td className="text-center font-bold hidden md:block">
                         &#x20b9;{" "}
                         {Math.round(
                           cartItem.product.product_price -
@@ -138,7 +149,7 @@ const Cart = () => {
             </tbody>
           </table>
         </div>
-        <div className="flex-1 w-[20%] bg-white p-5 rounded-lg">
+        <div className="flex-1 w-full md:w-[20%] bg-white p-5 rounded-lg">
           <div className="pb-4">
             <h2>
               {" "}
@@ -162,9 +173,9 @@ const Cart = () => {
               </span> &#x20b9; {Math.round(cartData.totalAmount - cartData.totalDiscount)}
             </h2>
             <div className="py-4">
-              <Link to={'/checkout'} className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">
+              <button onClick={handleCheckout} className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">
                 Checkout
-              </Link>
+              </button>
             </div>
           </div>
         </div>

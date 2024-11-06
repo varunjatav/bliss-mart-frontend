@@ -1,10 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { cartActions } from "../store/cartSlice";
 
 const Checkout = () => {
   const cartData = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.removeItem("cartData");
+    dispatch(cartActions.emptyCart())
+    navigate('/success');
+  }
   return (
-    <section className="container bg-gray-300 p-24">
+    <section className=" bg-gray-300 py-24 px-2 md:px-10 lg:px-24">
         <div className="pb-5">
         <h1 className="font-bold text-lg">Check Out Page</h1>
         <p> <span className="font-semibold text-md">Total Amount :</span> &#x20b9; {Math.round(cartData.totalAmount - cartData.totalDiscount)}</p>
@@ -12,8 +22,8 @@ const Checkout = () => {
      
       
         <div className="bg-white p-5 rounded-lg ">
-          <form action="">
-            <div className="flex justify-between gap-10 items-center">
+          <form action="" onSubmit={handleSubmit}>
+            <div className="flex flex-col justify-between gap-5 items-center md:flex-row md:gap-10">
               <div className="flex flex-1 w-full flex-col gap-2">
                 <label htmlFor="firstname" className="font-semibold">Your First Name :</label>
                 <input
@@ -49,7 +59,7 @@ const Checkout = () => {
                 />
             </div>
 
-            <div className="flex justify-between gap-10 items-center pt-3">
+            <div className="flex flex-col justify-between gap-5 pt-3 items-center md:flex-row md:gap-10">
               <div className="flex flex-1 w-full flex-col gap-2">
                 <label htmlFor="city" className="font-semibold">City :</label>
                 <input
@@ -72,7 +82,7 @@ const Checkout = () => {
               </div>
             </div>
 
-            <div className="flex justify-between gap-10 items-center pt-3">
+            <div className="flex flex-col justify-between gap-5 pt-3 items-center md:flex-row md:gap-10">
               <div className="flex flex-1 w-full flex-col gap-2">
                 <label htmlFor="zip" className="font-semibold">Zip Code :</label>
                 <input
@@ -96,9 +106,9 @@ const Checkout = () => {
             </div>
             <div className="pt-5">
             <h1 className="font-bold text-lg ">Credit/Debit Card payment</h1>
-            <div className="flex justify-between gap-10 items-center pt-2">
+            <div className="flex flex-col justify-between gap-5 pt-3 items-center md:flex-row md:gap-10">
                 
-              <div className="flex flex-2 w-[70%] flex-col gap-2">
+              <div className="flex flex-2 w-full md:w-[70%] flex-col gap-2">
                 <label htmlFor="cardholder_name" className="font-semibold">Cardholder Name:</label>
                 <input
                   type="text"
@@ -108,7 +118,7 @@ const Checkout = () => {
                   required
                 />
               </div>
-              <div className="flex flex-1 w-[30%] flex-col gap-2">
+              <div className="flex flex-2 w-full md:w-[70%] flex-col gap-2">
                 <label htmlFor="exp_date" className="font-semibold">Exp Date :</label>
                 <input
                   type="date"
@@ -120,9 +130,9 @@ const Checkout = () => {
               </div>
             </div>
 
-            <div className="flex justify-between gap-10 items-center pt-2">
+            <div className="flex flex-col justify-between gap-5 pt-3 items-center md:flex-row md:gap-10">
                 
-                <div className="flex flex-2 w-[70%] flex-col gap-2">
+                <div className="flex flex-2 w-full md:w-[70%] flex-col gap-2">
                   <label htmlFor="card_number" className="font-semibold">Card Number:</label>
                   <input
                     type="number"
@@ -130,9 +140,10 @@ const Checkout = () => {
                     placeholder="Enter Card Number"
                     className="border-2 border-blue-500 w-full p-2 rounded-md "
                     required
+                    maxLength={12}
                   />
                 </div>
-                <div className="flex flex-1 w-[30%] flex-col gap-2">
+                <div className="flex flex-2 w-full md:w-[70%] flex-col gap-2">
                   <label htmlFor="secuirty_code" className="font-semibold">Secuirity Code (CVV)</label>
                   <input
                     type="number"
@@ -140,7 +151,7 @@ const Checkout = () => {
                     placeholder="Enter Secuirity Code"
                     className="border-2 border-blue-500 w-full p-2 rounded-md"
                     required
-                    max={3}
+                    maxLength={3}
                   />
                 </div>
               </div>
