@@ -1,11 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+const api = import.meta.env.VITE_API_KEY;
+
 
 export const postToCart = createAsyncThunk(
   "cart/post",
   async (body, { rejectWithValue }) => {
     try {
-      const response = await axios.post("http://localhost:8080/api/cart", body);
+      const response = await axios.post(`${api}/cart`, body);
       // console.log(response.data);
       localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
@@ -21,7 +23,7 @@ export const fetchCartData = createAsyncThunk(
   async (userId, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/cart?userId=${userId}`
+        `${api}/cart?userId=${userId}`
       );
       if (response.status !== 200) {
         console.error("Fetch failed with status:", response.status);
@@ -45,7 +47,7 @@ export const decrementCart = createAsyncThunk(
 
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
+        `${api}/cart/decrement?userId=${userId}&productId=${productId}`
       );
       // console.log(response.data);
       // localStorage.setItem("cartData", JSON.stringify(response.data));
@@ -63,7 +65,7 @@ export const deleteCart = createAsyncThunk(
     // console.log(userId, productId);
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/cart/delete?userId=${userId}&productId=${productId}`
+        `${api}/cart/delete?userId=${userId}&productId=${productId}`
       );
       // console.log(response.data);
       // localStorage.setItem("cartData", JSON.stringify(response.data));

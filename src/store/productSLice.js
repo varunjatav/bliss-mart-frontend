@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const api = import.meta.env.VITE_API_KEY;
+
 export const getAllProducts = createAsyncThunk(
   "get/allproducts",
   async ({ category, price }, { rejectWithValue }) => {
@@ -11,7 +13,7 @@ export const getAllProducts = createAsyncThunk(
     lowerRange = priceRange[0] || lowerRange;
     higherRange = priceRange[1] || higherRange;
 
-    var url = `http://localhost:8080/api/products?product_category=${category}&product_price[gte]=${lowerRange}&product_price[lte]=${higherRange}`;
+    var url = `${api}/products?product_category=${category}&product_price[gte]=${lowerRange}&product_price[lte]=${higherRange}`;
 
     try {
       const products = await axios.get(url);
@@ -28,7 +30,7 @@ export const getsingleProduct = createAsyncThunk(
   async (productId, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/singleproduct/${productId}`
+        `${api}/singleproduct/${productId}`
       );
       return response.data.singleProduct;
     } catch (error) {

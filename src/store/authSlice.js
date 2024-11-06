@@ -5,6 +5,7 @@ import {
 import axios from "axios";
 import { axiosInstance } from "./axiosInstance";
 
+const api = import.meta.env.VITE_API_KEY;
 export const signupUser = createAsyncThunk(
   "singupUser/post",
   async (body, { rejectWithValue }) => {
@@ -12,7 +13,7 @@ export const signupUser = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/signup",
+        `${api}/signup`,
         body
       );
       // console.log(response.data);

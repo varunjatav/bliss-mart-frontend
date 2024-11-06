@@ -2,9 +2,9 @@ import axios from "axios";
 
 const persistedToken = localStorage.getItem('token');
 
-
+const api = import.meta.env.VITE_API_KEY;
 export const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/api',
+    baseURL: `${api}`,
     headers: {
         Authorization: `Bearer ${persistedToken}`,
     }
@@ -18,7 +18,7 @@ axiosInstance.interceptors.request.use(
             originalRequest._retry = true;
             const refreshToken = localStorage.getItem('refreshToken');
             try {
-                const response = axios.post('http://localhost:api/refresh', {refreshToken});
+                const response = axios.post(`${api}/refresh`, {refreshToken});
                 const {token , refreshToken : newRefreshToken} = response.data;
                 localStorage.setItem('token', token);
                 localStorage.setItem('refreshToken', newRefreshToken);
