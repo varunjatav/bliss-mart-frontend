@@ -1,6 +1,6 @@
 name: CI/CD for Bliss Mart Ecommerce
 
-om: 
+on: 
   push:
      branches:
            - main
