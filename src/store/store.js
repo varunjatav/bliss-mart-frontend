@@ -1,6 +1,6 @@
-import authSlice from "./authSlice";
-import cartSlice from "./cartSlice";
-import productSlice from "./productSlice";
+import authSlice from "./authSlice.js";
+import cartSlice from "./cartSlice.js";
+import productSlice from "./productSlice.js";
 
 import { configureStore } from "@reduxjs/toolkit";
 
