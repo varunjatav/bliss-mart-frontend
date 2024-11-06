@@ -11,6 +11,7 @@ import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import Cart from "./pages/Cart.jsx";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp.jsx";
+import Checkout from "./pages/Checkout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,9 @@ const router = createBrowserRouter([
       },{
         path:"signup",
         element: <SignUp/>
+      },{
+        path:'checkout',
+        element: <Checkout/>
       }
     ],
   },

@@ -35,10 +35,11 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { productActions } from "../store/productSlice";
 import { authActions } from "../store/authSlice";
+import { cartActions } from "../store/cartSlice";
 
 const navigation = {
   categories: [
@@ -116,15 +117,17 @@ const navigation = {
 
 export default function Example() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
   const persistedToken = localStorage.getItem("token");
+// console.log("persisted token: " + persistedToken);
 
   const cartLength = useSelector((state) => state.cart.cartLength);
-  // console.log(cartLength);
+  console.log(cartLength);
   const userstate = useSelector((state) => state.auth);
   const { isLoggedIn, token, refreshToken, userRole, userId } = userstate;
-  // console.log(isLoggedIn, token, refreshToken, userRole, userId);
+  console.log(isLoggedIn, token, refreshToken, userRole, userId);
 
   const handleProductCategory = (category) => {
     dispatch(productActions.handleCategory(category));
@@ -139,6 +142,10 @@ export default function Example() {
     dispatch(authActions.logout()); // Clear Redux state
     localStorage.removeItem("token");
     localStorage.removeItem("refreshToken");
+    localStorage.removeItem("cartData");
+    localStorage.removeItem("userId");
+    dispatch(cartActions.emptyCart())
+    navigate("/product-list");
   };
 
   return (
@@ -421,7 +428,7 @@ export default function Example() {
               </PopoverGroup>
 
               <div className="ml-auto flex items-center">
-                {persistedToken ? (
+                {token || persistedToken ? (
                   <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                     <button
                       className="text-sm font-medium text-gray-700 hover:text-gray-800"

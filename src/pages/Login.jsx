@@ -4,9 +4,9 @@ import { authActions, loginUser } from "../store/authSlice";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const loginState = useSelector(state => state.auth.login);
-  console.log(loginState);
-  
+  const {isError, isLoggedIn, login, userRole} = useSelector(state => state.auth);
+  console.log(isError, isLoggedIn, login, userRole);
+  // const loginState = useSelector(state => state.auth.login)
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("Submitting login:", loginState); // Log state before submission
-    dispatch(loginUser(loginState)).then(() => dispatch(authActions.resetLoginForm()));
+    dispatch(loginUser(login)).then(() => dispatch(authActions.resetLoginForm()));
   }
 
   return (
@@ -39,7 +39,7 @@ const Login = () => {
             placeholder="Enter your Email here"
             className="border-2 p-2 my-2 rounded-lg w-full hover:border-blue-500 active:border-blue-500"
             onChange={handleChange}
-            value={loginState.email}
+            value={login.email}
           />
         </div>
 
@@ -56,7 +56,7 @@ const Login = () => {
             placeholder="Enter your Password here"
             className="border-2 p-2 mt-2 rounded-lg w-full hover:border-blue-500 active:border-blue-500"
             onChange={handleChange}
-            value={loginState.password}
+            value={login.password}
           />
         </div>
         <div className="py-4 flex items-center justify-center">
@@ -67,6 +67,7 @@ const Login = () => {
           />
         </div>
       </form>
+      {isError?.status === "fail" && <h1 className="text-center font-bold text-lg text-red-600">{isError.message} *</h1>}
     </section>
   );
 };

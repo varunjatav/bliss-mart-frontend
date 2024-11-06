@@ -28,7 +28,7 @@ export const fetchCartData = createAsyncThunk(
         return rejectWithValue("Failed to fetch cart data");
       }
       // console.log(response.data);
-      localStorage.setItem("cartData", JSON.stringify(response.data));
+      // localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
       
     } catch (error) {
@@ -48,7 +48,7 @@ export const decrementCart = createAsyncThunk(
         `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
       );
       // console.log(response.data);
-      localStorage.setItem("cartData", JSON.stringify(response.data));
+      // localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
     } catch (error) {
       console.log(error.message);
@@ -60,14 +60,12 @@ export const decrementCart = createAsyncThunk(
 export const deleteCart = createAsyncThunk(
   "cart/delete",
   async ({ userId, productId }) => {
-    console.log(userId, productId);
-
     try {
       const response = await axios.delete(
         `http://localhost:8080/api/cart/decrement?userId=${userId}&productId=${productId}`
       );
       // console.log(response.data);
-      localStorage.setItem("cartData", JSON.stringify(response.data));
+      // localStorage.setItem("cartData", JSON.stringify(response.data));
       return response.data;
     } catch (error) {
       console.log(error.message);
@@ -81,19 +79,17 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: {
     cartLength: 0,
-    cart: [],
+    cart: {},
     error: null,
     isLoading: false,
     totalAmount: 0,
     totalDiscount: 0,
-    // quantity: 1,
   },
   reducers: {
     TotalPrice: (state) => {
       state.totalAmount = 0; // Reset total before calculating
       // Check if cart items are available
       state.totalDiscount = 0;
-      console.log(state.cart, state.cart.items);
 
       if (state.cart && state.cart.items) {
         for (let i = 0; i < state.cartLength; i++) {
@@ -104,22 +100,21 @@ const cartSlice = createSlice({
             state.cart.items[i].product.product_price *
             state.cart.items[i].quantity *
             (+(state.cart.items[i].product.product_discount) / 100);
-          console.log("price: " + price);
-          console.log("discount: " + +(discount));
+       
 
           state.totalAmount += price || 0;
           state.totalDiscount += discount;
         }
       }
-      console.log("Total Amount:", state.totalAmount);
-      console.log("Total Discount:", +(state.totalDiscount));
     },
+    emptyCart: (state) => {
+      state.cart = {};
+    }
   },
   extraReducers: (builder) => {
     builder.addCase(postToCart.fulfilled, (state, action) => {
       state.error = null;
       state.isLoading = false;
-      console.log(action.payload);
     }),
       builder.addCase(postToCart.pending, (state, action) => {
         state.error = null;
@@ -140,13 +135,13 @@ const cartSlice = createSlice({
     });
     builder.addCase(fetchCartData.pending, (state, action) => {
       state.cartLength = 0;
-      state.cart = [];
+      state.cart = {};
       state.error = null;
       state.isLoading = true;
     });
     builder.addCase(fetchCartData.rejected, (state, action) => {
       state.cartLength = 0;
-      state.cart = [];
+      state.cart = {};
       state.error = state.error;
       state.isLoading = false;
     });

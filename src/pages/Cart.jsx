@@ -10,6 +10,7 @@ import {
   fetchCartData,
   postToCart,
 } from "../store/cartSlice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -17,29 +18,31 @@ const Cart = () => {
   const localCartData = JSON.parse(localStorage.getItem("cartData"));
   const [persistData, setPersistData ] = useState(cartData || localCartData);
 
-  console.log("total discount from cart.jsx", cartData.totalDiscount);
   const userId = localStorage.getItem("userId");
   
-  console.log(localCartData.items);
-
   useEffect(() => {
     dispatch(fetchCartData(userId));
     dispatch(cartActions.TotalPrice());
-    setPersistData(localCartData);
+    // setPersistData(localCartData);
   }, [dispatch, userId]);
-  // console.log(cartData?.cart?.items);
-  console.log("persist cart data", persistData);
+  console.log("cart data", cartData.cart);
   
 
   const handleDecrement = (productId) => {
-    dispatch(decrementCart({ userId, productId }));
+    dispatch(decrementCart({ userId, productId })).then(() => {
+      dispatch(fetchCartData(userId));
+    });
   };
   const handleDelete = (productId) => {
-    dispatch(deleteCart({ userId, productId }));
+    dispatch(deleteCart({ userId, productId })).then(() => {
+      dispatch(fetchCartData(userId));
+    });
   };
 
   const handleIncrement = (productId) => {
-    dispatch(postToCart({ _id: productId, userId }));
+    dispatch(postToCart({ _id: productId, userId })).then(() => {
+      dispatch(fetchCartData(userId));
+    });
   };
 
   return (
@@ -65,8 +68,7 @@ const Cart = () => {
             </thead>
             <tbody>
               {cartData?.cartLength > 0 ? (
-                localCartData.items?.map((cartItem, i) => {
-                  console.log(cartItem);
+                cartData?.cart?.items?.map((cartItem, i) => {
                   return (
                     <tr key={cartItem._id} className="py-2">
                       <td>
@@ -146,7 +148,7 @@ const Cart = () => {
             <h2>
               {" "}
               <span className="font-bold text-md "> Total Discount: </span> -
-              &#x20b9; {cartData.totalDiscount}
+              &#x20b9; {Math.round(cartData.totalDiscount)}
             </h2>
           </div>
 
@@ -160,9 +162,9 @@ const Cart = () => {
               </span> &#x20b9; {Math.round(cartData.totalAmount - cartData.totalDiscount)}
             </h2>
             <div className="py-4">
-              <button className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">
+              <Link to={'/checkout'} className="bg-green-500 px-5 py-2 rounded-lg text-white font-bold">
                 Checkout
-              </button>
+              </Link>
             </div>
           </div>
         </div>
